@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://b3jgrd1dkoq52"]
+
+[ext_resource type="Script" uid="uid://cxp5abu3evn6d" path="res://prefabs/ui/ui.gd" id="1_70ykp"]
+[ext_resource type="PackedScene" uid="uid://bir2xgpv0y7d1" path="res://ui/pause_menu/pause_menu.tscn" id="2_4ieor"]
+[ext_resource type="PackedScene" uid="uid://c43o7w4vqsrsn" path="res://ui/settings_menu/settings_menu.tscn" id="3_4ieor"]
+[ext_resource type="PackedScene" uid="uid://cjc2sjlxsx01m" path="res://ui/start_menu/start_menu.tscn" id="4_htiv7"]
+[ext_resource type="PackedScene" uid="uid://35ghendx3aaa" path="res://ui/credits/credits.tscn" id="5_gxjsb"]
+
+[node name="Ui" type="CanvasLayer"]
+layer = 2
+script = ExtResource("1_70ykp")
+
+[node name="PauseMenu" parent="." instance=ExtResource("2_4ieor")]
+unique_name_in_owner = true
+visible = false
+
+[node name="SettingsMenu" parent="." instance=ExtResource("3_4ieor")]
+unique_name_in_owner = true
+visible = false
+
+[node name="StartMenu" parent="." instance=ExtResource("4_htiv7")]
+unique_name_in_owner = true
+
+[node name="GameOver" parent="." instance=ExtResource("5_gxjsb")]
+unique_name_in_owner = true
+visible = false

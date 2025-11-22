@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dixqr368fsnmt"
+path="res://.godot/imported/exertion grunt 3.wav-ee453c4ee2f04a48964b578a051175ca.sample"
+
+[deps]
+
+source_file="res://assets/audio/dialogue/noises/exertion grunt 3.wav"
+dest_files=["res://.godot/imported/exertion grunt 3.wav-ee453c4ee2f04a48964b578a051175ca.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

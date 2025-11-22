@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bub1bx12nt612"]
+
+[ext_resource type="Texture2D" uid="uid://wc8h5ma81n42" path="res://assets/art/materials/Textures/LightsTexture.png" id="1_hj7f4"]
+
+[resource]
+transparency = 4
+cull_mode = 2
+shading_mode = 2
+diffuse_mode = 1
+albedo_texture = ExtResource("1_hj7f4")

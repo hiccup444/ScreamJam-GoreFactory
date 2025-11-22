@@ -1,0 +1,181 @@
+[gd_scene load_steps=22 format=3 uid="uid://du1c1bvn64ucc"]
+
+[ext_resource type="PackedScene" uid="uid://dhmlo1x7ffgxc" path="res://assets/models/Player/Player.glb" id="1_4ymfl"]
+[ext_resource type="Material" uid="uid://dd1of3gs57l24" path="res://assets/art/materials/HumanSkinMat.tres" id="2_xcyds"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xcyds"]
+animation = &"Anim-Player-CrouchIdle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_mryoa"]
+animation = &"Anim-Player-CrouchWalkForward"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_e5yvv"]
+animation = &"Anim-Player-CrouchWalkForward"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_rp2m6"]
+animation = &"Anim-Player-CrouchWalkForward"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_pol5a"]
+animation = &"Anim-Player-CrouchWalkForward"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_hvqk4"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_xcyds")
+blend_point_0/pos = Vector2(0, 0)
+blend_point_1/node = SubResource("AnimationNodeAnimation_mryoa")
+blend_point_1/pos = Vector2(0, 1)
+blend_point_2/node = SubResource("AnimationNodeAnimation_e5yvv")
+blend_point_2/pos = Vector2(1, 0)
+blend_point_3/node = SubResource("AnimationNodeAnimation_rp2m6")
+blend_point_3/pos = Vector2(-1, 0)
+blend_point_4/node = SubResource("AnimationNodeAnimation_pol5a")
+blend_point_4/pos = Vector2(0, -1)
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_b6byk"]
+animation = &"Anim-Player-Idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_6barq"]
+animation = &"Anim-Player-Idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_agiw0"]
+animation = &"Anim-Player-Interact"
+
+[sub_resource type="AnimationNodeOneShot" id="AnimationNodeOneShot_ot5ig"]
+break_loop_at_end = true
+
+[sub_resource type="AnimationNodeTransition" id="AnimationNodeTransition_6barq"]
+xfade_time = 0.25
+input_0/name = "idle"
+input_0/auto_advance = false
+input_0/break_loop_at_end = false
+input_0/reset = true
+input_1/name = "walk"
+input_1/auto_advance = false
+input_1/break_loop_at_end = false
+input_1/reset = true
+input_2/name = "run"
+input_2/auto_advance = false
+input_2/break_loop_at_end = false
+input_2/reset = true
+input_3/name = "crouch"
+input_3/auto_advance = false
+input_3/break_loop_at_end = false
+input_3/reset = true
+input_4/name = "interact"
+input_4/auto_advance = false
+input_4/break_loop_at_end = false
+input_4/reset = true
+input_5/name = "push"
+input_5/auto_advance = false
+input_5/break_loop_at_end = false
+input_5/reset = true
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_hvqk4"]
+animation = &"Anim-Player-Run"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_my5ie"]
+animation = &"Anim-Player-Idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_o1f83"]
+animation = &"Anim-Player-WalkForward"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_5dywh"]
+animation = &"Anim-Player-WalkLeft"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_5hy37"]
+animation = &"Anim-Player-WalkRight"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_2eoc6"]
+animation = &"Anim-Player-WalkForward"
+play_mode = 1
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_dmwb1"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_my5ie")
+blend_point_0/pos = Vector2(0, 0)
+blend_point_1/node = SubResource("AnimationNodeAnimation_o1f83")
+blend_point_1/pos = Vector2(0, 1)
+blend_point_2/node = SubResource("AnimationNodeAnimation_5dywh")
+blend_point_2/pos = Vector2(-1, 0)
+blend_point_3/node = SubResource("AnimationNodeAnimation_5hy37")
+blend_point_3/pos = Vector2(1, 0)
+blend_point_4/node = SubResource("AnimationNodeAnimation_2eoc6")
+blend_point_4/pos = Vector2(0, -1)
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_0f6sa"]
+graph_offset = Vector2(-746.7124, -142.97618)
+nodes/Idle/node = SubResource("AnimationNodeAnimation_b6byk")
+nodes/Idle/position = Vector2(-240, -140)
+nodes/Motion/node = SubResource("AnimationNodeTransition_6barq")
+nodes/Motion/position = Vector2(-40, 40)
+nodes/Crouch/node = SubResource("AnimationNodeBlendSpace2D_hvqk4")
+nodes/Crouch/position = Vector2(-440, 220)
+nodes/Walk/node = SubResource("AnimationNodeBlendSpace2D_dmwb1")
+nodes/Walk/position = Vector2(-440, -40)
+nodes/Run/node = SubResource("AnimationNodeAnimation_hvqk4")
+nodes/Run/position = Vector2(-620, 120)
+nodes/Interact/node = SubResource("AnimationNodeAnimation_agiw0")
+nodes/Interact/position = Vector2(-620, 660)
+nodes/InteractOneshot/node = SubResource("AnimationNodeOneShot_ot5ig")
+nodes/InteractOneshot/position = Vector2(-300, 460)
+nodes/IdleReturn/node = SubResource("AnimationNodeAnimation_6barq")
+nodes/IdleReturn/position = Vector2(-600, 440)
+node_connections = [&"output", 0, &"Motion", &"Motion", 0, &"Idle", &"Motion", 1, &"Walk", &"Motion", 2, &"Run", &"Motion", 3, &"Crouch", &"Motion", 4, &"InteractOneshot", &"InteractOneshot", 0, &"IdleReturn", &"InteractOneshot", 1, &"Interact"]
+
+[node name="PlayerModel" instance=ExtResource("1_4ymfl")]
+
+[node name="PlayerArmature" parent="." index="0"]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="Skeleton3D" parent="PlayerArmature" index="0"]
+bones/0/rotation = Quaternion(6.717943e-08, 1.1920928e-07, 0, 1)
+bones/1/rotation = Quaternion(0.99751896, 0.02947728, 0.03967228, -0.05013182)
+bones/2/rotation = Quaternion(0.0023259423, -0.0043603694, -0.00023260307, 0.99998784)
+bones/3/rotation = Quaternion(-0.43043566, -0.02910516, 0.029280236, 0.90167665)
+bones/4/rotation = Quaternion(-0.3721837, 1.5262617e-07, -8.469589e-08, 0.92815906)
+bones/5/rotation = Quaternion(0.076438114, 6.668662e-13, 1.8215816e-08, 0.9970743)
+bones/6/rotation = Quaternion(-0.18259123, -1.4211651e-14, -4.3533138e-08, 0.9831889)
+bones/7/rotation = Quaternion(0.106866874, -1.8626285e-12, 2.54963e-08, 0.99427336)
+bones/8/rotation = Quaternion(5.6501503e-05, -5.577295e-18, -1.7763573e-15, 1)
+bones/9/position = Vector3(0.09518922, 0.233006, -0.014118923)
+bones/9/rotation = Quaternion(0.068116955, 0.082428224, -0.76639426, 0.633408)
+bones/10/rotation = Quaternion(-0.1820261, 0.047113284, -0.49973541, 0.8455244)
+bones/11/rotation = Quaternion(0.2681199, 7.2048264e-05, -0.02894718, 0.9629505)
+bones/11/scale = Vector3(1.0000001, 0.9999998, 1.0000001)
+bones/12/rotation = Quaternion(0.008134044, 0.722493, -0.07881557, 0.68682307)
+bones/14/position = Vector3(-0.095189236, 0.23300599, -0.014118986)
+bones/14/rotation = Quaternion(0.068116784, -0.08242835, 0.7663942, 0.633408)
+bones/15/rotation = Quaternion(-0.18202619, -0.047113433, 0.49973536, 0.8455243)
+bones/16/rotation = Quaternion(0.26812035, -7.2042574e-05, 0.028947223, 0.9629505)
+bones/17/rotation = Quaternion(0.008134042, -0.722493, 0.07881558, 0.68682307)
+bones/18/rotation = Quaternion(0.29869023, 0.06603053, -0.14779927, 0.94052094)
+bones/19/rotation = Quaternion(0.99751896, -0.029477268, -0.039672077, -0.05013181)
+bones/20/rotation = Quaternion(0.002325912, 0.0043604085, 0.0002325946, 0.99998784)
+bones/21/rotation = Quaternion(-0.4304356, 0.029105183, -0.029280245, 0.90167665)
+bones/22/rotation = Quaternion(-0.37218374, 7.101253e-08, -7.570926e-09, 0.92815906)
+bones/23/position = Vector3(-0.28273904, 0.9928658, -0.023997493)
+bones/23/rotation = Quaternion(0.49962014, -0.49967897, 0.5003208, 0.5003798)
+
+[node name="PlayerBody" parent="PlayerArmature/Skeleton3D" index="0"]
+surface_material_override/0 = ExtResource("2_xcyds")
+
+[node name="HeadRefBone" type="BoneAttachment3D" parent="PlayerArmature/Skeleton3D" index="1"]
+transform = Transform3D(1, 8.986884e-12, 2.3842108e-07, 2.0494717e-13, 0.9999999, -3.854189e-05, -2.3842117e-07, 3.8571685e-05, 0.9999998, 5.430168e-12, 1.5504951, 0.0015441863)
+bone_name = "Head"
+bone_idx = 8
+
+[node name="HeadRefTracker" type="Node3D" parent="PlayerArmature/Skeleton3D/HeadRefBone" index="0"]
+unique_name_in_owner = true
+transform = Transform3D(1, -7.25886e-12, 8.583356e-11, 7.362777e-12, 0.99999934, -0.0012316704, -8.5890406e-11, 0.0012316536, 0.99999934, 0, 0.1, 0.3)
+
+[node name="AnimationTree" type="AnimationTree" parent="." index="2"]
+unique_name_in_owner = true
+root_node = NodePath("%AnimationTree/..")
+tree_root = SubResource("AnimationNodeBlendTree_0f6sa")
+anim_player = NodePath("../AnimationPlayer")
+parameters/Motion/current_state = "walk"
+parameters/Motion/transition_request = ""
+parameters/Motion/current_index = 1
+parameters/Crouch/blend_position = Vector2(0, 1)
+parameters/Walk/blend_position = Vector2(0, 0)
+parameters/InteractOneshot/active = false
+parameters/InteractOneshot/internal_active = false
+parameters/InteractOneshot/request = 0

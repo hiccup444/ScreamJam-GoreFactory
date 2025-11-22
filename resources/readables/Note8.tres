@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ReadableResource" load_steps=3 format=3 uid="uid://comrt25ik3i2p"]
+
+[ext_resource type="Resource" uid="uid://cxrcj8ivinb0d" path="res://resources/dialogue/subtitleAudioLink/en/rice note reaction (en).tres" id="1_btjxc"]
+[ext_resource type="Script" uid="uid://b128ugy2v2u7m" path="res://resources/readables/readable.gd" id="1_mirms"]
+
+[resource]
+script = ExtResource("1_mirms")
+readable_text = "Note8"
+dialogue = ExtResource("1_btjxc")
+metadata/_custom_type_script = "uid://b128ugy2v2u7m"

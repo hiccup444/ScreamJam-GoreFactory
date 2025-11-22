@@ -1,0 +1,81 @@
+[gd_scene load_steps=4 format=3 uid="uid://bir2xgpv0y7d1"]
+
+[ext_resource type="Theme" uid="uid://nugk8q3qw3sn" path="res://resources/themes/theme.tres" id="1_1coih"]
+[ext_resource type="Script" uid="uid://dpbsuejrnhxj5" path="res://ui/pause_menu/pause_menu.gd" id="2_le02u"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nhkli"]
+font_size = 80
+font_color = Color(0.68359375, 0.04005432, 0.04005432, 1)
+outline_size = 8
+
+[node name="PauseMenu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_1coih")
+script = ExtResource("2_le02u")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.68235296)
+
+[node name="Rows" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 48
+
+[node name="Title" type="Label" parent="Rows"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Title"
+label_settings = SubResource("LabelSettings_nhkli")
+
+[node name="ButtonRows" type="VBoxContainer" parent="Rows"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="ReturnButton" type="Button" parent="Rows/ButtonRows"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 48
+text = "Return"
+flat = true
+
+[node name="RestartButton" type="Button" parent="Rows/ButtonRows"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 48
+text = "Restart"
+flat = true
+
+[node name="SettingsButton" type="Button" parent="Rows/ButtonRows"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 48
+text = "Settings"
+flat = true
+
+[node name="QuitButton" type="Button" parent="Rows/ButtonRows"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 48
+text = "Quit"
+flat = true

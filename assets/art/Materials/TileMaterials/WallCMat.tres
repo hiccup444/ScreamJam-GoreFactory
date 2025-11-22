@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://njndkft4awlx"]
+
+[ext_resource type="Texture2D" uid="uid://eqv5eaowbuaw" path="res://assets/art/materials/textures/TileTextures/ElevatorWallTexture.png" id="1_3crhn"]
+
+[resource]
+shading_mode = 2
+diffuse_mode = 1
+albedo_texture = ExtResource("1_3crhn")
+uv1_scale = Vector3(0.2, 0.2, 0.2)
+uv1_triplanar = true

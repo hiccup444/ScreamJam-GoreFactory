@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c12xp6cpgr3hs"]
+
+[ext_resource type="Texture2D" uid="uid://cl58e4jkj4wli" path="res://assets/art/materials/Textures/3DPaperTexture.png" id="1_sfn24"]
+
+[resource]
+shading_mode = 2
+diffuse_mode = 1
+albedo_texture = ExtResource("1_sfn24")

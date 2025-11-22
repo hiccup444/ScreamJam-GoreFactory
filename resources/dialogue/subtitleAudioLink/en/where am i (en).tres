@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=4 format=3 uid="uid://bvxadjboog2m7"]
+
+[ext_resource type="AudioStream" uid="uid://dchqadoniriv6" path="res://assets/audio/dialogue/en/where am i (en).wav" id="1_cxp8k"]
+[ext_resource type="Script" path="res://scripts/data/dialogue_data.gd" id="2_y130q"]
+[ext_resource type="Resource" uid="uid://n1a68hw0ox2a" path="res://resources/dialogue/subtitles/where am i.tres" id="3_y130q"]
+
+[resource]
+script = ExtResource("2_y130q")
+audio_clip = ExtResource("1_cxp8k")
+subtitle_data = ExtResource("3_y130q")
+speaker_name = "Player"

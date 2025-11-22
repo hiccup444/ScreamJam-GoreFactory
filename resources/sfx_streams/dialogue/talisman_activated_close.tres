@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RandomDialogueData" load_steps=5 format=3 uid="uid://7sgfj62kxdf4"]
+
+[ext_resource type="Script" path="res://scripts/data/dialogue_data.gd" id="1_whx3h"]
+[ext_resource type="Resource" uid="uid://mp5jx2e4dsmv" path="res://resources/dialogue/subtitleAudioLink/en/its close (en).tres" id="2_6sdec"]
+[ext_resource type="Resource" uid="uid://bcgdm5oehd15m" path="res://resources/dialogue/subtitleAudioLink/en/fuckfuckfuck (en).tres" id="3_hmuem"]
+[ext_resource type="Script" uid="uid://u13os7nem56v" path="res://resources/sfx_streams/dialogue/randomized_dialogue.gd" id="4_wt50t"]
+
+[resource]
+script = ExtResource("4_wt50t")
+dialogue_data_list = Array[ExtResource("1_whx3h")]([ExtResource("2_6sdec"), ExtResource("3_hmuem")])
+metadata/_custom_type_script = "uid://u13os7nem56v"

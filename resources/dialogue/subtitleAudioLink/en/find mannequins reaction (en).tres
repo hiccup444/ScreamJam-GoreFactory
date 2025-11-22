@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=4 format=3 uid="uid://imldvspqwmpl"]
+
+[ext_resource type="AudioStream" uid="uid://cv4nxl6iqfld6" path="res://assets/audio/dialogue/en/find mannequins reaction (en).wav" id="1_qjg8w"]
+[ext_resource type="Script" path="res://scripts/data/dialogue_data.gd" id="2_yopmw"]
+[ext_resource type="Resource" uid="uid://dqbwpqfxpje5l" path="res://resources/dialogue/subtitles/find mannequins reaction.tres" id="3_yopmw"]
+
+[resource]
+script = ExtResource("2_yopmw")
+audio_clip = ExtResource("1_qjg8w")
+subtitle_data = ExtResource("3_yopmw")
+speaker_name = "Player"

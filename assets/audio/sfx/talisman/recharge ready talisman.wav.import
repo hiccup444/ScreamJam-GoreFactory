@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bwrnsnacy6gu4"
+path="res://.godot/imported/recharge ready talisman.wav-ed7c7d7b47483ddb105d70237df22147.sample"
+
+[deps]
+
+source_file="res://assets/audio/sfx/talisman/recharge ready talisman.wav"
+dest_files=["res://.godot/imported/recharge ready talisman.wav-ed7c7d7b47483ddb105d70237df22147.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

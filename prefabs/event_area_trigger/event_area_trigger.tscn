@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8gjx62tj4v1l"]
+
+[ext_resource type="Script" uid="uid://d0610cjpavhns" path="res://prefabs/event_area_trigger/event_area_trigger.gd" id="1_ts33r"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ydmud"]
+size = Vector3(2.0810547, 1.8837891, 1)
+
+[node name="EventAreaTrigger" type="Area3D"]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_ts33r")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_ydmud")

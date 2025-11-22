@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ReadableResource" load_steps=3 format=3 uid="uid://co5b3gs7dp86k"]
+
+[ext_resource type="Script" uid="uid://b128ugy2v2u7m" path="res://resources/readables/readable.gd" id="1_3w63x"]
+[ext_resource type="Resource" uid="uid://bqed6ll8hx6ad" path="res://resources/dialogue/subtitleAudioLink/en/generic note response (en).tres" id="1_eghbj"]
+
+[resource]
+script = ExtResource("1_3w63x")
+readable_text = "ShippingRecord"
+dialogue = ExtResource("1_eghbj")
+metadata/_custom_type_script = "uid://b128ugy2v2u7m"

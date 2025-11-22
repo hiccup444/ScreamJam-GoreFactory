@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=4 format=3 uid="uid://binnfinht4rrw"]
+
+[ext_resource type="AudioStream" uid="uid://n8mmwg76ohsk" path="res://assets/audio/dialogue/en/jumpscare reaction quiet (en).wav" id="1_rwtok"]
+[ext_resource type="Script" uid="uid://b2np6ns7qtn2s" path="res://scripts/data/dialogue_data.gd" id="2_7oyil"]
+[ext_resource type="Resource" uid="uid://cvtxwxvyo0v0i" path="res://resources/dialogue/subtitles/jumpscare reaction quiet.tres" id="3_7oyil"]
+
+[resource]
+script = ExtResource("2_7oyil")
+audio_clip = ExtResource("1_rwtok")
+subtitle_data = ExtResource("3_7oyil")
+speaker_name = "Player"

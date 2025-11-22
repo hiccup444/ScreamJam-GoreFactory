@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=4 format=3 uid="uid://ntiheyp8r67p"]
+
+[ext_resource type="AudioStream" uid="uid://bfjai6vrpy3e8" path="res://assets/audio/dialogue/en/final note response (en).wav" id="1_xbrkc"]
+[ext_resource type="Script" path="res://scripts/data/dialogue_data.gd" id="2_sqw1n"]
+[ext_resource type="Resource" uid="uid://dyfochqlamtwn" path="res://resources/dialogue/subtitles/final note response.tres" id="3_sqw1n"]
+
+[resource]
+script = ExtResource("2_sqw1n")
+audio_clip = ExtResource("1_xbrkc")
+subtitle_data = ExtResource("3_sqw1n")
+speaker_name = "Player"

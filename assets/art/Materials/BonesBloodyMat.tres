@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://df276aykul5n7"]
+
+[ext_resource type="Texture2D" uid="uid://da8as0j4mbeq6" path="res://assets/art/materials/Textures/BonesTexture-bloody.png" id="1_b4dfq"]
+
+[resource]
+transparency = 4
+cull_mode = 2
+shading_mode = 2
+diffuse_mode = 1
+albedo_texture = ExtResource("1_b4dfq")

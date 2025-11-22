@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ReadableResource" load_steps=4 format=3 uid="uid://b4mebtg6lqpoq"]
+
+[ext_resource type="Script" uid="uid://b128ugy2v2u7m" path="res://resources/readables/readable.gd" id="1_bhgqy"]
+[ext_resource type="Resource" uid="uid://ntiheyp8r67p" path="res://resources/dialogue/subtitleAudioLink/en/final note response (en).tres" id="1_spvao"]
+[ext_resource type="Texture2D" uid="uid://dsb6n0a3e88n7" path="res://assets/art/ui/PaperTextures/PaperTexture-BloodD.png" id="2_spvao"]
+
+[resource]
+script = ExtResource("1_bhgqy")
+readable_text = "Note7"
+dialogue = ExtResource("1_spvao")
+paper_texture = ExtResource("2_spvao")
+metadata/_custom_type_script = "uid://b128ugy2v2u7m"

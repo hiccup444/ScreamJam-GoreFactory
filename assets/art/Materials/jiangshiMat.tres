@@ -1,0 +1,26 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://01obhaya6nlk"]
+
+[ext_resource type="Texture2D" uid="uid://c4a7vqqviv4ie" path="res://assets/art/materials/textures/JianshiTexture.png" id="1_dpj30"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dpj30"]
+render_priority = 1
+transparency = 1
+no_depth_test = true
+shading_mode = 0
+disable_fog = true
+albedo_color = Color(2.205245, 4.448333, 1.3013146, 0)
+stencil_mode = 3
+stencil_flags = 1
+stencil_compare = 5
+metadata/_stencil_owned = true
+
+[resource]
+next_pass = SubResource("StandardMaterial3D_dpj30")
+transparency = 4
+cull_mode = 2
+shading_mode = 2
+diffuse_mode = 1
+albedo_texture = ExtResource("1_dpj30")
+stencil_mode = 2
+stencil_flags = 2
+stencil_color = Color(2.205245, 4.448333, 1.3013146, 0)

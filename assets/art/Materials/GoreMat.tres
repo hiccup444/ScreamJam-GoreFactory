@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dp0o4dolq8u64"]
+
+[ext_resource type="Texture2D" uid="uid://ymc1jb5vbs1j" path="res://assets/art/materials/Textures/TileTextures/GoreTexture.png" id="1_1puie"]
+
+[resource]
+shading_mode = 2
+diffuse_mode = 1
+albedo_texture = ExtResource("1_1puie")
+uv1_scale = Vector3(0.3, 0.3, 0.3)
+uv1_triplanar = true

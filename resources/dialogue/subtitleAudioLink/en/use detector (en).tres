@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=4 format=3 uid="uid://hym3n4n0lbbc"]
+
+[ext_resource type="AudioStream" uid="uid://dg4f7o227mnxj" path="res://assets/audio/dialogue/en/use detector (en).wav" id="1_wscyv"]
+[ext_resource type="Script" uid="uid://b2np6ns7qtn2s" path="res://scripts/data/dialogue_data.gd" id="2_xxn5l"]
+[ext_resource type="Resource" uid="uid://ck823jtsta343" path="res://resources/dialogue/subtitles/use detector.tres" id="3_xxn5l"]
+
+[resource]
+script = ExtResource("2_xxn5l")
+audio_clip = ExtResource("1_wscyv")
+subtitle_data = ExtResource("3_xxn5l")
+speaker_name = "Player"

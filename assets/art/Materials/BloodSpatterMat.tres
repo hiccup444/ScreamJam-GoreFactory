@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://257tahvuoncv"]
+
+[ext_resource type="Texture2D" uid="uid://dfgw752dnd2df" path="res://assets/art/materials/textures/TileTextures/BloodTexture.png" id="1_1hlqj"]
+
+[resource]
+transparency = 1
+shading_mode = 2
+diffuse_mode = 1
+albedo_texture = ExtResource("1_1hlqj")

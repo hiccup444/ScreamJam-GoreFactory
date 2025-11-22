@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=4 format=3 uid="uid://dwk78qqvp4g12"]
+
+[ext_resource type="AudioStream" uid="uid://i8cqu156yjf3" path="res://assets/audio/dialogue/en/where do i go (nervous).wav" id="1_w17xp"]
+[ext_resource type="Script" uid="uid://b2np6ns7qtn2s" path="res://scripts/data/dialogue_data.gd" id="2_6vjtu"]
+[ext_resource type="Resource" uid="uid://dqeapoqal28u5" path="res://resources/dialogue/subtitles/where do i go (nervous).tres" id="3_6vjtu"]
+
+[resource]
+script = ExtResource("2_6vjtu")
+audio_clip = ExtResource("1_w17xp")
+subtitle_data = ExtResource("3_6vjtu")
+speaker_name = "Player"

@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://pci5lg580et0"]
+
+[ext_resource type="Texture2D" uid="uid://c50ujtopvi6ic" path="res://assets/art/materials/Textures/OrgansTexture-Rotten.png" id="1_mgnwy"]
+
+[resource]
+shading_mode = 2
+diffuse_mode = 1
+albedo_texture = ExtResource("1_mgnwy")

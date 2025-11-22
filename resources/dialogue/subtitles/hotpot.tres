@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SubtitleData" load_steps=2 format=3 uid="uid://dbgylp0wj708q"]
+
+[ext_resource type="Script" uid="uid://dblo6x50mw5k3" path="res://scripts/data/subtitle_data.gd" id="1_g7rd4"]
+
+[resource]
+script = ExtResource("1_g7rd4")
+text = "Text"
+characters_per_second = 20.0
+auto_hide = true
+auto_hide_delay_ms = 5000.0
+allow_interruption = true
+translation_key = "Voice_SafeIdle"
+metadata/_custom_type_script = "uid://dblo6x50mw5k3"

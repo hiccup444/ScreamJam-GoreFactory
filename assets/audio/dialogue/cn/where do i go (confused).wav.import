@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bvwfkuqfqbp3n"
+path="res://.godot/imported/where do i go (confused).wav-6e93acc86b5887baec3f2fbc0ac87832.sample"
+
+[deps]
+
+source_file="res://assets/audio/dialogue/cn/where do i go (confused).wav"
+dest_files=["res://.godot/imported/where do i go (confused).wav-6e93acc86b5887baec3f2fbc0ac87832.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

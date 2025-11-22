@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cvyec5qolsygo"
+path="res://.godot/imported/impact grunt 1.wav-d8813598b0aa9cc5d75c8bbcf7d71dca.sample"
+
+[deps]
+
+source_file="res://assets/audio/dialogue/noises/impact grunt 1.wav"
+dest_files=["res://.godot/imported/impact grunt 1.wav-d8813598b0aa9cc5d75c8bbcf7d71dca.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

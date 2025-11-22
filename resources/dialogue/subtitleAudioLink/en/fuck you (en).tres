@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=4 format=3 uid="uid://by5fqbwd1d0on"]
+
+[ext_resource type="AudioStream" uid="uid://1e20p56si4qv" path="res://assets/audio/dialogue/en/fuck you (en).wav" id="1_5djte"]
+[ext_resource type="Script" path="res://scripts/data/dialogue_data.gd" id="2_r8sb1"]
+[ext_resource type="Resource" uid="uid://dg0mu6gaija3j" path="res://resources/dialogue/subtitles/escape_creature.tres" id="3_r8sb1"]
+
+[resource]
+script = ExtResource("2_r8sb1")
+audio_clip = ExtResource("1_5djte")
+subtitle_data = ExtResource("3_r8sb1")
+speaker_name = "Player"

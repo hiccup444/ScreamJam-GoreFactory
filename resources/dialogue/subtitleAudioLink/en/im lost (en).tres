@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=4 format=3 uid="uid://vpf3hxu4fvn6"]
+
+[ext_resource type="AudioStream" uid="uid://d3qibxg8jb3um" path="res://assets/audio/dialogue/en/im lost (en).wav" id="1_kvl8x"]
+[ext_resource type="Script" uid="uid://b2np6ns7qtn2s" path="res://scripts/data/dialogue_data.gd" id="2_34dej"]
+[ext_resource type="Resource" uid="uid://uqxahhdu5v5s" path="res://resources/dialogue/subtitles/im lost.tres" id="3_34dej"]
+
+[resource]
+script = ExtResource("2_34dej")
+audio_clip = ExtResource("1_kvl8x")
+subtitle_data = ExtResource("3_34dej")
+speaker_name = "Player"

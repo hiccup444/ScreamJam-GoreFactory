@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://1e20p56si4qv"
+path="res://.godot/imported/fuck you (en).wav-6ee56e28b6922c1ca18b5f75a46b343e.sample"
+
+[deps]
+
+source_file="res://assets/audio/dialogue/en/fuck you (en).wav"
+dest_files=["res://.godot/imported/fuck you (en).wav-6ee56e28b6922c1ca18b5f75a46b343e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

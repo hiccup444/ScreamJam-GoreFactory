@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cvwlrdivtffqj"
+path="res://.godot/imported/die you bastard (cn).wav-dad9609203614893466389d8ce7ffbc0.sample"
+
+[deps]
+
+source_file="res://assets/audio/dialogue/cn/die you bastard (cn).wav"
+dest_files=["res://.godot/imported/die you bastard (cn).wav-dad9609203614893466389d8ce7ffbc0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

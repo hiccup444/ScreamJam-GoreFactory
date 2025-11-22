@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dqm4gtsj2hqmn"]
+
+[ext_resource type="Texture2D" uid="uid://cfwbhrredjjle" path="res://assets/art/materials/Textures/OrgansTexture.png" id="1_rnv1w"]
+
+[resource]
+transparency = 4
+cull_mode = 2
+shading_mode = 2
+diffuse_mode = 1
+albedo_texture = ExtResource("1_rnv1w")

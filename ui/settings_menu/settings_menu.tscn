@@ -1,0 +1,191 @@
+[gd_scene load_steps=5 format=3 uid="uid://c43o7w4vqsrsn"]
+
+[ext_resource type="Theme" uid="uid://nugk8q3qw3sn" path="res://resources/themes/theme.tres" id="1_kvsec"]
+[ext_resource type="Script" uid="uid://xa4nl2ij5daa" path="res://ui/settings_menu/settings_menu.gd" id="2_2adas"]
+[ext_resource type="Script" uid="uid://r6vx5b3gpmp0" path="res://ui/audio_sliders/audio_sliders.gd" id="3_2adas"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kvsec"]
+font_size = 64
+
+[node name="SettingsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_kvsec")
+script = ExtResource("2_2adas")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.68235296)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 32
+
+[node name="Settings" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Settings"
+label_settings = SubResource("LabelSettings_kvsec")
+
+[node name="Locale_Subtitles" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 12
+
+[node name="LocaleRow" type="HBoxContainer" parent="VBoxContainer/Locale_Subtitles"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Locale" type="Label" parent="VBoxContainer/Locale_Subtitles/LocaleRow"]
+layout_mode = 2
+text = "Locale"
+
+[node name="LocaleOptionsButton" type="OptionButton" parent="VBoxContainer/Locale_Subtitles/LocaleRow"]
+unique_name_in_owner = true
+layout_mode = 2
+item_count = 2
+popup/item_0/text = "English"
+popup/item_0/id = 0
+popup/item_1/text = "简体中文"
+popup/item_1/id = 1
+
+[node name="SubtitlesToggle" type="CheckButton" parent="VBoxContainer/Locale_Subtitles"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 2
+text = "Subtitles"
+
+[node name="SensitivityContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 256
+theme_override_constants/margin_right = 256
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/SensitivityContainer"]
+layout_mode = 2
+
+[node name="Sensitivity" type="Label" parent="VBoxContainer/SensitivityContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_stretch_ratio = 0.45
+text = "Look sensitivity"
+
+[node name="SensitivitySlider" type="HSlider" parent="VBoxContainer/SensitivityContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.02
+max_value = 0.25
+step = 0.01
+value = 0.1
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 256
+theme_override_constants/margin_right = 256
+
+[node name="AudioSliders" type="VBoxContainer" parent="VBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+script = ExtResource("3_2adas")
+
+[node name="MasterSliderRow" type="HBoxContainer" parent="VBoxContainer/MarginContainer/AudioSliders"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="VBoxContainer/MarginContainer/AudioSliders/MasterSliderRow"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_stretch_ratio = 0.45
+text = "MasterVolume"
+
+[node name="MasterSlider" type="HSlider" parent="VBoxContainer/MarginContainer/AudioSliders/MasterSliderRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+
+[node name="MusicSliderRow" type="HBoxContainer" parent="VBoxContainer/MarginContainer/AudioSliders"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="VBoxContainer/MarginContainer/AudioSliders/MusicSliderRow"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_stretch_ratio = 0.45
+text = "MusicVolume"
+
+[node name="MusicSlider" type="HSlider" parent="VBoxContainer/MarginContainer/AudioSliders/MusicSliderRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+
+[node name="SFXSliderRow" type="HBoxContainer" parent="VBoxContainer/MarginContainer/AudioSliders"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="VBoxContainer/MarginContainer/AudioSliders/SFXSliderRow"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_stretch_ratio = 0.45
+text = "SFXVolume"
+
+[node name="SFXSlider" type="HSlider" parent="VBoxContainer/MarginContainer/AudioSliders/SFXSliderRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+
+[node name="DialogueSliderRow" type="HBoxContainer" parent="VBoxContainer/MarginContainer/AudioSliders"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="VBoxContainer/MarginContainer/AudioSliders/DialogueSliderRow"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_stretch_ratio = 0.45
+text = "DialogueVolume"
+
+[node name="DialogueSlider" type="HSlider" parent="VBoxContainer/MarginContainer/AudioSliders/DialogueSliderRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+
+[node name="BackButton" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Return"
+flat = true
+
+[node name="Label" type="Label" parent="VBoxContainer/BackButton"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 6.0
+offset_right = 23.0
+offset_bottom = 40.0
+text = "<"

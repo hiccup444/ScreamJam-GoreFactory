@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://ddy6lud1u04y4"]
+
+[ext_resource type="Texture2D" uid="uid://cl0i1kebd604o" path="res://assets/art/materials/Textures/MetalTexture.png" id="1_jhewc"]
+
+[resource]
+transparency = 4
+cull_mode = 2
+shading_mode = 2
+diffuse_mode = 1
+albedo_texture = ExtResource("1_jhewc")

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=4 format=3 uid="uid://b3dl8d6qyliii"]
+
+[ext_resource type="AudioStream" uid="uid://c6g4qwd214qcg" path="res://assets/audio/dialogue/en/enter safe zone (en).wav" id="1_3yk4l"]
+[ext_resource type="Script" uid="uid://b2np6ns7qtn2s" path="res://scripts/data/dialogue_data.gd" id="2_t7mmk"]
+[ext_resource type="Resource" uid="uid://cqe6snj4kqr8i" path="res://resources/dialogue/subtitles/enter safe zone.tres" id="3_t7mmk"]
+
+[resource]
+script = ExtResource("2_t7mmk")
+audio_clip = ExtResource("1_3yk4l")
+subtitle_data = ExtResource("3_t7mmk")
+speaker_name = "Player"

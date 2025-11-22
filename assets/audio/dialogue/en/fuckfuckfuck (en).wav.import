@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cfnvg2bnr3lcy"
+path="res://.godot/imported/fuckfuckfuck (en).wav-ed5a190430463be4953c91eb06fbda5f.sample"
+
+[deps]
+
+source_file="res://assets/audio/dialogue/en/fuckfuckfuck (en).wav"
+dest_files=["res://.godot/imported/fuckfuckfuck (en).wav-ed5a190430463be4953c91eb06fbda5f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

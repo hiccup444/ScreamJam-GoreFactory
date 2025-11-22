@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=4 uid="uid://cuqoh5s4bm3jd"]
+
+[ext_resource type="Material" uid="uid://b8qpb78qd4n42" path="res://assets/art/materials/RiceMat.tres" id="1_0lhdd"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_avkgk"]
+points = PackedVector3Array(0.25396827, 0.057131987, 0.25396827, -0.23587385, -0.049999997, -0.23587385, -0.23587385, -0.049999997, 0.23587385, -0.25396827, 0.057131987, -0.25396827, 0.23587385, -0.049999997, -0.23587385, -0.25396827, 0.057131987, 0.25396827, 0.25396827, 0.057131987, -0.25396827, 0.23587385, -0.049999997, 0.23587385)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bp368"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_8r3ur"]
+_surfaces = [{
+"aabb": AABB(-0.3006783, -0.008094043, -0.30090404, 0.60153055, 0.092056826, 0.60153055),
+"format": 34896613377,
+"index_count": 72,
+"index_data": PackedByteArray("AAALAAwADAACAAAAAgAMAAMACAALAAAAAQAIAAAABAAIAAEADAAJAAMACAAEAA0ACwAOAAwACAAOAAsADAAOAAkADQAOAAgAAwAJAAoACQAOAAoACgAHAAMABwAKAAYACgAOAA8ACgAPAAYAEAAOAA0ADwAOABAAEAANAAQABgAPABAABQAQAAQAEAAFAAYA"),
+"lods": [0.06408118, PackedByteArray("AAAIAAIAAQAIAAAABAAIAAEACAAJAAIABAAJAAgAAgAJAAMABQAJAAQAAwAJAAoACgAJAAUACgAHAAMABgAKAAUABwAKAAYA"), 0.14168343, PackedByteArray("AAABAAIAAQADAAIABAADAAEABQADAAQABgADAAUABwADAAYA")],
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 17,
+"vertex_data": PackedByteArray("BSUAAPDaAAAAAAAA+X8AAAWAAAD//wAA8doAAPDaAAAFJQAADiUAAPl/AAAAAAAA8doAAA4lAAD//wAABYAAAII+3pz8fwAAT6+50bquAAAAvx9/FX4AAMNQX1ChrQAAAYDenHvBAACDUS/NKlEAAP1/////fwAAIa8lTn1QAAD7f96cgz4AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_5ef5s"]
+resource_name = "Rice_Plane_033"
+_surfaces = [{
+"aabb": AABB(-0.3006783, -0.008094043, -0.30090404, 0.60153055, 0.092056826, 0.60153055),
+"attribute_data": PackedByteArray("eagTfHSCMF252e57l/igVXaCqSuHoWIFz9JSBZf4HiThnx9PstocS4/aoDHdsXpgncupXougUTamvdxAUsk3IKuv3CI="),
+"format": 34896613399,
+"index_count": 72,
+"index_data": PackedByteArray("AAALAAwADAACAAAAAgAMAAMACAALAAAAAQAIAAAABAAIAAEADAAJAAMACAAEAA0ACwAOAAwACAAOAAsADAAOAAkADQAOAAgAAwAJAAoACQAOAAoACgAHAAMABwAKAAYACgAOAA8ACgAPAAYAEAAOAA0ADwAOABAAEAANAAQABgAPABAABQAQAAQAEAAFAAYA"),
+"lods": [0.06408118, PackedByteArray("AAAIAAIAAQAIAAAABAAIAAEACAAJAAIABAAJAAgAAgAJAAMABQAJAAQAAwAJAAoACgAJAAUACgAHAAMABgAKAAUABwAKAAYA"), 0.14168343, PackedByteArray("AAABAAIAAQADAAIABAADAAEABQADAAQABgADAAUABwADAAYA")],
+"material": SubResource("StandardMaterial3D_bp368"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 17,
+"vertex_data": PackedByteArray("BSUAAPDaPrgAAAAA+X8PwAWAAAD///Cz8doAAPDaArwFJQAADiWvy/l/AAAAAEzQ8doAAA4ly8r//wAABYBDxYI+3pz8f1a8T6+50bquP74Avx9/FX5MycNQX1ChrQ25AYDenHvBjrWDUS/NKlG5yf1/////f1LCIa8lTn1QxMn7f96cgz6lzoHW7Jz41lelItKrkj/TCoYj2fehuNznlMrcworS2PmGb9ewoarUE4eW296Fj9a3myTSUJgN2TOfDdfZk/vbNop62ziR")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_8r3ur")
+
+[node name="Rice" type="StaticBody3D"]
+collision_layer = 0
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+shape = SubResource("ConvexPolygonShape3D_avkgk")
+
+[node name="RicePile" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+material_override = ExtResource("1_0lhdd")
+mesh = SubResource("ArrayMesh_5ef5s")
+skeleton = NodePath("")

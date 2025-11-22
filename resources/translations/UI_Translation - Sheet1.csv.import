@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cgtamt3ybhaft"
+
+[deps]
+
+files=["res://resources/translations/UI_Translation - Sheet1.en.translation", "res://resources/translations/UI_Translation - Sheet1.zh.translation", "res://resources/translations/UI_Translation - Sheet1.zh_TW.translation"]
+
+source_file="res://resources/translations/UI_Translation - Sheet1.csv"
+dest_files=["res://resources/translations/UI_Translation - Sheet1.en.translation", "res://resources/translations/UI_Translation - Sheet1.zh.translation", "res://resources/translations/UI_Translation - Sheet1.zh_TW.translation"]
+
+[params]
+
+compress=true
+delimiter=0

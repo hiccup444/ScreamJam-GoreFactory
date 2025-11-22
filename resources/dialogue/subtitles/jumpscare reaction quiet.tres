@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SubtitleData" load_steps=2 format=3 uid="uid://cvtxwxvyo0v0i"]
+
+[ext_resource type="Script" uid="uid://dblo6x50mw5k3" path="res://scripts/data/subtitle_data.gd" id="1_uecx2"]
+
+[resource]
+script = ExtResource("1_uecx2")
+text = "Text"
+characters_per_second = 25.0
+auto_hide = true
+auto_hide_delay_ms = 5000.0
+allow_interruption = true
+translation_key = "Voice_Jumpscare"
+metadata/_custom_type_script = "uid://dblo6x50mw5k3"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=4 format=3 uid="uid://cxrcj8ivinb0d"]
+
+[ext_resource type="AudioStream" uid="uid://cnetttrvrsn7" path="res://assets/audio/dialogue/en/rice note reaction (en).wav" id="1_bkonv"]
+[ext_resource type="Script" uid="uid://b2np6ns7qtn2s" path="res://scripts/data/dialogue_data.gd" id="2_3gpb4"]
+[ext_resource type="Resource" uid="uid://dild8v3oey6qu" path="res://resources/dialogue/subtitles/rice note reaction.tres" id="3_3gpb4"]
+
+[resource]
+script = ExtResource("2_3gpb4")
+audio_clip = ExtResource("1_bkonv")
+subtitle_data = ExtResource("3_3gpb4")
+speaker_name = "Player"

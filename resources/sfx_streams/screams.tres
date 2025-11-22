@@ -1,0 +1,9 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://cf5ttc6c12xmf"]
+
+[ext_resource type="AudioStream" uid="uid://8rtsx7mwcuck" path="res://assets/audio/dialogue/noises/short scream 1.wav" id="1_uwvnl"]
+[ext_resource type="AudioStream" uid="uid://gluge3scsu8a" path="res://assets/audio/dialogue/noises/short scream 2.wav" id="2_j2ix0"]
+
+[resource]
+streams_count = 2
+stream_0/stream = ExtResource("1_uwvnl")
+stream_1/stream = ExtResource("2_j2ix0")

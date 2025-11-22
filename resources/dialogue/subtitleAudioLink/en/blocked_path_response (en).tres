@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=4 format=3 uid="uid://blnuoiyh0uv0j"]
+
+[ext_resource type="AudioStream" uid="uid://jkhtqi2jy0jg" path="res://assets/audio/dialogue/en/blocked path response (en).wav" id="1_hwcy2"]
+[ext_resource type="Script" path="res://scripts/data/dialogue_data.gd" id="2_agets"]
+[ext_resource type="Resource" uid="uid://ctko5ftieo7ep" path="res://resources/dialogue/subtitles/blocked_path_response.tres" id="3_2mwec"]
+
+[resource]
+script = ExtResource("2_agets")
+audio_clip = ExtResource("1_hwcy2")
+subtitle_data = ExtResource("3_2mwec")
+speaker_name = "Player"

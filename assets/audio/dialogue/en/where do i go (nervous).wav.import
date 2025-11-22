@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://i8cqu156yjf3"
+path="res://.godot/imported/where do i go (nervous).wav-8fe33b08391e0e9406474483559b411f.sample"
+
+[deps]
+
+source_file="res://assets/audio/dialogue/en/where do i go (nervous).wav"
+dest_files=["res://.godot/imported/where do i go (nervous).wav-8fe33b08391e0e9406474483559b411f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

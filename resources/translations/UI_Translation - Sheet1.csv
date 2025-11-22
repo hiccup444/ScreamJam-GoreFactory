@@ -1,0 +1,191 @@
+key,en,zh,zh_TW
+Title,Gore Factory,凌遲廠,凌迟厂
+Settings,Settings,選項,选项
+MainMenu,Main Menu,主選單,主选单
+Play,Play,開始遊戲,开始游戏
+ReadyToDie,Ready to die?,準備好去死嗎？,准备好去死吗？
+Quit,Quit,退出,退出
+QuitPrompt1,Are you sure you want to quit?,確定要退出嗎？,确定要退出吗？
+QuitPrompt2,You sure?,確定嗎？,确定吗？
+Die,Die,死掉,死掉
+MasterVolume,Master,全局音量,全局音量
+MusicVolume,Music,背景音樂,背景音乐
+SFXVolume,SFX,音效音量,音效音量
+DialogueVolume,Dialogue,台詞音量,台词音量
+Locale,Locale,語言,语言
+Language,English,繁體中文,简体中文
+WinScreen,You got out…this time.,你......這次逃開了。,你......这次逃开了。
+Controls,Controls,控制,控制
+Interact,Interact,互動,互动
+PickUp,Pick up,拿起來,拿起来
+Move,Move,走路,走路
+WSDAToMove,WSDA to Move,WSDA走路,WSDA走路
+Crouch,Crouch,蹲下,蹲下
+ControlForCrouch,CTRL for Crouch,CTRL蹲下,CTRL蹲下
+Sprint,Sprint,衝刺,冲刺
+Use,Use,使用,使用
+UseItem,Use Item,使用事務,使用事物
+LeftClick,Left-click,左點擊,左点击
+Talisman,Talisman,符,符
+UseTalisman,Use Talisman,使用符,使用符
+Activate,Activate,啟動,启动
+Scan,Scan,掃描,扫描
+ClickToUse,Left Click to Use,按左邊點擊使用,按左边点击使用
+ClickToUseTalisman,Left Click to Use Talisman,按左邊點擊使用符,按左边点击使用符
+Cancel,Cancel,取消,取消
+Stop,Stop,停止,停止
+End,End,結束,结束
+RightClick,Right Click,右邊點擊,右边点击
+RightClickCancel,Right Click to Cancel,右邊點選取消,右边点击取消
+RightClickStop,Right Click to Stop,右邊點擊停止,右边点击停止
+RightClickEnd,Right Click to End,右邊點擊結束,右边点击结束
+Throw,Throw,丢,丢
+ThrowRice,Throw Rice,散米,散米
+FThrowRice,F to Throw Rice,按F散米,按F散米
+Take,Take,拿起來,拿起来
+TakeRice,Take Rice,拿起米,拿起米
+Camera,Camera,相機,相机
+MoveCamera,Move Camera,移動相機,移动相机
+Credits,Credits,製作群,制作群
+Return,Return,繼續遊戲,继续游戏
+LeftStick,Left Stick,左柄,左柄
+RightStick,Right Stick,右柄,右柄
+MoveLS,Move LS,移動左柄,移动左柄
+MoveRS,Move RS,移動右柄,移动右柄
+LeftButton,Left Button,LB,RB
+RightButton,Right Button,RB,RB
+Inverted,Inverted,倒置,倒置
+InvertedControls,Inverted Controls,倒置控制,倒置控制
+StartButton,Start,開始,开始
+BackButton,Back,返回,返回
+Mouse,Mouse,滑鼠,鼠标
+MouseWheel,Mouse Wheel,滑鼠輪子,鼠标轮子
+SpaceBar,Space Bar,空格鍵,空格键
+On,On,開,开
+Off,Off,關,关
+Close,Close,關閉,关闭
+Deactivate,Deactivate,取消啟動,取消启动
+WakeUp,Wake Up,清醒,清醒
+Subtitles,Subtitles,字幕,字幕
+InventoryDocument,Records\nShipment #24ZXXX\nXue Yunheng\nShen Qing\nLu Cheng\nXie Xuan\nYan Su\nLiu Xiao\nTotal 6 to be harvested\nOrgan count:\nHearts  6\nLungs  12\nKidneys 12\nLarge intestines 6\nSmall intestines 6\nLivers 6\nDestroy all identification.,記錄\n裝船\n雪運恆\n沈情\n陸城\n謝軒\n延蘇\n劉霄\n一共有6個等待收穫\n內臟數：\n心臟\n肺臟\n腎臟\n大肠\n小肠\n肝臟\n把所有身分證毀滅了。,记录\n装船\n雪运恒\n沈情\n陆城\n谢轩\n延苏\n刘霄\n一共有6个等待收获\n内脏数\n心脏\n肺脏\n肾脏\n大肠\n小肠\n肝脏\n把所有身份证毁灭了。
+ShippingRecord,Shipment #42AXXX\nWeight: 58kg\nContents: [REDACTED]\n,裝船\n重量\n內容：【已編輯】\n,装船\n重量\n内容：【已编辑】\n
+Note1,"Operations are running smoothly. If Mr Li is to be believed, our payout from this will be significant. I only hope he upholds his end of the deal… otherwise we’ll be in deep shit.",行動都順利的。李先生可信的話，這行動的獲利會非常大的。我只希望他履行協議，不然我們要陷入困境。,行动都顺利的。李先生可信的话，这行动的盈利会非常大的。我只希望他履行协议，不然我们要陷入困境。
+Note2,"Bodies have been arriving in their dozens. Most of them in good condition; Mr Li’s guys know what they’re doing. That’s a relief for us, I guess. Far less chance of us getting caught that way.",幾十具屍體都陸續運抵。它們的情況大體挺好的；李先生的打手都熟練。我們能鬆一下；那麼，被抓住的機率就少多了。,几十具尸体都陆续运抵。它们的情况大体挺好的；李先生的打手都熟练。我们能松一下；那么，被抓住的机率就少多了。
+Note3,"The project is coming along well. All necessary parts have been acquired; now the only question is assembly. The control talisman is the most vital part; without it, none of this will work.\nIt’s been a long time since I worked in the business of talismans; I can only hope my skills in drawing them are still up to par.",項目還順利的。所有必要的材料已經拿到了；眼下只剩下的問題就是裝配。控制符就是最重要的一部分。缺乏的話，這都行不動。,项目还顺利的。所有必要的材料已经被拿到了；眼下只剩下的问题就是装配。控制符就是最重要的一部分。缺乏的话，这都行不动。\n我很久没工作在画符的商业。我只希望我的手艺还行。
+Note4,"The project is nearly completed, but I’ve a bad feeling. The closer we get to finishing, the higher the chance we’ll be discovered. I hate to think what would be worse – the police finding out, or Mr Li…",項目快完成了，但我有什麼不對勁的感覺。結果越靠近，被發現的機率越高。我不知道哪更壞的 – 被警察發現，還是李先生……,项目快完成了，但我有什么不对劲的感觉。结果越靠近，被发现的机率越高。我不知道哪更坏的 – 被警察发现，还是李先生……
+Note5,"Things aren’t going well. I adapted the talisman as I thought would be necessary, but the second I put it on the creature, it activated and went berserk. We fortunately managed to remove it in time, but we lost engineers Mu and Lin in the process. If this happens again… Mr Li will have my head for this.\nThere’s got to be something I’m missing. After all, this isn’t like an ordinary Jiangshi, made with the summoned spirit of a single corpse. I have to find a solution, or my reputation will be far from the only thing at stake.",行動不順利了。我按照覺得必要得修改符了，但貼在怪物的一瞬間，它先啟動然後猛地狂暴了。好在我們及時把符撕掉了，但過程裡木和林工程師都被殺死了。這種事再發生的話…….李先生會把我的頭撕開了……\n我一定還有什麼東西還缺乏的。 畢竟這個怪物不像正常的殭屍；它又不是用一個人的屍體和靈魂製作的。我需要找解決的方法，不然我的面子不會成為唯一遇險的。,行动不顺利了。我按照觉得必要得修改符了，但贴在怪物的一瞬间，它先启动然后猛地狂暴了。好在我们及时把符撕掉了，但过程里木和林工程师却都被杀死了。这种事再发生的话…….李先生会把我的头撕开了……\n我一定还有什么东西还缺乏的。 毕竟这个怪物不像正常的僵尸一样；它又不是使用一个人的尸体和灵魂制作的。我需要找解决的方法，不然我的面子不会成为唯一遇险的。
+Note6,"I’ve succeeded! I was reluctant to conduct another trial after what happened last time, but this time it was worth the risk.\nBy making adjustments to the talisman’s original form, I’ve managed to render the creature obedient. At long last, I can report back to Mr Li with positive results… now, all that remains is to finish assembly, and deal with the remaining corpses. ",成功了！上次以後，我捨不得再進行實驗，但這次冒險都值得。\n由修改符的原本設計，我成功讓怪物聽話的。我終於能對李先生報告好成果… 眼下，只剩下的就是完成裝配，然後處理剩下的屍體。,成功了！上次以后，我舍不得再进行实验，但这次冒险都值得。\n由修改符的原本设计，我成功让怪物听话的。我终于能对李先生报告好成果… 眼下，只剩下的就是完成装配，然后处理剩下的尸体。 
+Note7,"Everything’s gone to shit. I’m hiding away in the backroom as I write this.\nMy control talisman worked for a time, but not long enough to send my report back to Mr Li. As I was writing it, the creature broke containment and killed the remaining engineers. Ancestors forgive me… It’s prowling as we speak, looking to hunt me down. I can’t get out. the shipping crates block the way, and that thing stands between me and the elevator…\nI drew up a detection talisman, but I dropped it somewhere, and I can’t risk going back to find it. Not with that thing on the loose.\nIf anyone is still alive in this place, find that talisman. There’s a shredder room at the end of the corridor; lure it there and end this.\nMr Li doesn’t matter now; I won’t be leaving this place alive. Nor will my soul be able to cross the Yellow River.\nI’ve doomed myself, and us all.\nDo not forgive me.\nDirector Wang Yi",一切都亂七八糟了。我躲藏著在後屋寫這張。\n我的控制符暫時成功了，但為了向李先生發報告時間不夠。我寫著報告，怪物破壞它的安全殼然後殺死剩下的工程師。祖先，原諒我……它在巡邏，恨不得殺死我。我出不去。板條箱攔住路道，那怪物站在我和電梯之間……\n我畫了一張檢測符，但路上丟掉了， 不能回去找找。那個怪物在的話，什麼都不行。\n如果有人在這破地方還活著，去找一找那張檢測符。走廊的盡頭有一個碎機屋；引誘它進去，然後把所有的事結束了。\n李先生的事無所謂了。我活著不會離開這裡，我的靈魂也過不去黃河。\n我讓自己和所有人下地獄了。\n不要原諒我。\n王儀主任,一切都乱七八糟了。我躲藏着在后屋写这张\n我的控制符暂时成功了，但为了向李先生发报告时间不够。我写着报告，怪物破坏它的安全壳然后杀死剩下的工程师。祖先，原谅我……它在巡逻，恨不得杀死我。我出不去。板条箱拦住路道，那怪物站在我和电梯之间……\n我画了一张检测符，但路上丢掉了， 不能回去找找。那个怪物在的话，什么都不行。\n如果有人在这破地方还活着，去找一找那张检测符。走廊的尽头有一个碎机屋；引诱它进去，然后把所有的事结束了。\n李先生的事无所谓了。我活着不会离开这里，我的灵魂也过不去黄河。\n我让自己和所有人下地狱了。\n不要原谅我。\n王仪主任
+Note8,Who knew that the stories about Jiangshi and rice are true!,誰知關於殭屍和飯的傳說都真的！,谁知关于僵尸和饭的传说都真的！
+Voice_WakeUp,<7000>…What….,……什麼......,……什么......
+Voice_UseDetector,<800>Damn it… where are you…,該死…… 你到底在哪裡…….,该死…… 你到底在哪儿…….
+Voice_MonsterShredder,"Die, you fucking bastard!",去死，你混賬!,去死，你混账!
+Voice_NoteResponse,"So it’s like that, huh…",原來如此啊.,原来如此啊.
+Voice_OrganTunnel,Eugh…<500> gross…<1000> the hell…,"啐……<500> 好臭……<500>  什麼鬼......
+",啐……好臭…… 什么鬼......
+Voice_Note7,<600>So it’s him.,就是他。,就是他。
+Voice_BoneMannequins,Are these made of…<600> bone?,這是......用骨頭製作的嗎?,这是......用骨头制作的吗?
+Voice_BlockedPath,Blocked.,攔住了。,拦住了。
+Voice_Jumpscare,Fuck!,我操!,我操!
+Voice_Safezone,Should be safe for the time being.,應該暫時安全吧。,应该暂时安全吧。
+Voice_Note8,Jiangshi and<250> rice…<1000> does he mean the one about scattering rice?,殭屍和......飯？他是指關於散飯的傳說嗎？,僵尸和......饭？他是指关于散饭的传说吗？
+Voice_Note1,Who’s Mr Li?,李先生是誰？,李先生是谁？
+Voice_Generic,What’s this?,這是什麼？,这是什么？
+Voice_GenericEnvironment,<500>What was that?,那是啥？,那是啥？
+Voice_Generic2,Huh?,哈?,哈?
+Voice_MovingCrates,<800>Why is this so heavy…,為啥這麼沉重啊......,为啥这么沉重啊......
+Voice_GenericConfused,<500>Where do I go???,我應該去哪裡？ ？,我应该去哪里？？
+Voice_Lost,Where am I?,我在哪裡？,我在哪儿？
+Voice_Lost2,I’m lost… ,我迷路了......,我迷路了......
+Voice_FirstTalisman,It<500> scans…?,它掃.....嗎？,它扫.....吗？
+Voice_SafeIdle,"<100>When I get out of here, Im going for hotpot.<1050> No meat, though…",逃開這破地方之後，我該去吃火鍋吧。但是不要肉啊......,逃开这破地方之后，我该去吃火锅吧。但是不要肉啊......
+Voice_DetectedCreature,<500>It’s close… ,它靠近了......,它靠近了......
+Voice_Beginning,<1600>Where are my clothes?!,衣服在哪裡？ ！,衣服在哪儿？！
+Voice_OutOfRice,Fuck me.,我靠.,我靠.
+Voice_SawBodies,<1200>So many bodies…,屍體好多啊......,尸体好多啊......
+Voice_CreatureAlert,Fuck! Fuck! Fuck! Fuck!,我操我操我操我操！,我操我操我操我操！
+Voice_EscapeCreature,Fuck you.,去你媽。,去你妈。
+Voice_Chainsaw,<250>What a drag.<250> It’s out of gas.,糟糕啊。汽油都沒了。,糟糕啊。汽油都没了。
+Voice_DarkRoom,I can’t see a thing.,什麼都看不見。,什么都看不见。
+Resume,Resume,繼續遊戲,继续游戏
+Look sensitivity,Look sensitivity,相機靈敏度,相机灵敏度
+Invert Vertical Axis,Invert Vertical Axis,倒置垂直軸,倒置垂直轴
+Restart,Restart Level,重新開始關卡,重新开始关卡
+TAB,TAB,TAB,TAB
+Pause,Pause,暫停,暂停
+Key,Key,鍵,键
+Control,Control ,控制,控制
+Gameplay,Gameplay,遊戲,游戏
+Detector,Detector,檢測符,检测符
+Keyboard,Keyboard,鍵盤,键盘
+Mouse and Keyboard,Mouse and Keyboard,滑鼠與鍵盤,鼠标与键盘
+Player,Player,玩家,玩家
+Table for Twenty,Table for Twenty,桌子為二十位,桌子为二十位
+Credits,Credits,製作群,制作群
+&,&,與,与
+and,and,與,与
+Sr. (Senior),Sr. (Senior),首長,首长
+Associate,Associate,副,副
+Director,Director,導演,导演
+Art Director,[b]Art Director,[b]藝術,[b]艺术
+Project Lead,Project Lead,項目主管,项目主管
+Creative Director,Creative Director,創作導演,创作导演
+Executive Producer,Executive Producer,監製,监制
+Producer,[b]Producer,[b]出品人,[b]出品人
+Producer & 2D Artist,Producer & 2D Artist,出品人與二維畫家,出品人与二维画家
+Programming Lead,[b]Programming Lead,[b]程式設計部主管,[b]程序设计部主管
+Programming Lead & Generalist,Programming Lead & Generalist,程序設計部主管與通才,程序设计部主管与通才
+Programmers,Programmers,程式員,程序员
+Sr. Programmer,Sr. Programmer,首長程式員,首长程序员
+Associate Programmer,Associate Programmer,副程式員,副程序员
+Associate Programmer & Designer,Associate Programmer & Designer,副程式員與設計師,副程序员与设计师
+Gameplay Programmer,Gameplay Programmer,遊戲程式員,游戏程序员
+Systems Programmer,Systems Programmer,系統程式員,系统程序员
+Backend Programmer,Backend Programmer,後端程式員,后端程序员
+Generalist,[b]Generalists,[b]通才,[b]通才
+Design Lead,[b]Design Lead,[b]設計部主管,[b]设计部主管
+Designer,[b]Designers,[b]設計師,[b]设计师
+Sr. Designers,[b]Sr. Designers,[b]首長設計師,[b]首长设计师
+Level Designer,[b]Level Designer,[b]遊戲關設計師,[b]游戏关设计师
+Design & Story Lead,Design & Story Lead,設計與故事部主管,设计与故事部主管
+Enemy AI Designer,Enemy AI Designer,敵人AI設計師,敌人AI设计师
+Art Lead,[b]Art Lead,[b]藝術部主管,[b]艺术部主管
+Artist,[b]Artists,[b]藝術家,[b]艺术家
+Sr. Artist,Sr. Artist,首長藝術家,首长艺术家
+3D Artist,3D Artist,三維藝術家,三维艺术家
+Art Lead & 3D Artist,Art Lead & 3D Artist,藝術部主管與三維藝術家,艺术部主管与三维艺术家
+Concept Artist,Concept Artist,概念畫家,概念画家
+Visual Development Artist,Visual Development Artist,視覺開發藝術家,视觉开发艺术家
+2D Artist,2D Artist,二維藝術家,二维艺术家
+Illustrator,Illustrator,圖解家,图解家
+Texture Artist,Texture Artist,紋理藝術家,纹理艺术家
+Material Artist,Material Artist,物質藝術家,物质艺术家
+Technical Artist,Technical Artist,技術藝術家,技术艺术家
+Graphic Designer,[b]Graphic Designer,[b]平面設計師,[b]平面设计师
+Associate Artist,[b]Associate Artists,[b]副藝術家,[b]副艺术家
+Associate 2D Artist,Associate 2D Artist,副二維藝術家,副二维艺术家
+Art Consultant,[b]Art Consultant,[b]藝術顧問,[b]艺术顾问
+UI Designer,[b]UI Designers,[b]人機界面設計師,[b]人机界面设计师
+UI Engineer,[b]UI Engineers,[b]人機界面工程師,[b]人机界面工程师
+UI Design & Engineer,UI Design & Engineer,人機界面設計師與工程師,人机界面设计师与工程师
+Audio Lead,[b]Audio Lead,[b]音響部主管,[b]音响部主管
+Audio,Audio,音響,音响
+Composer,[b]Composer,[b]作曲家,[b]作曲家
+SFX,SFX,音效,音效
+Sound Designer,[b]Sound Designers,[b]音響設計師,[b]音响设计师
+Audio Affiliate,Audio Affiliate,音響關聯者,音响关联者
+Localization,[b]Localization,[b]翻譯,[b]翻译
+Voice Actor,[b]Voice Actor,[b]聲優,[b]声优
+QA (Quality Assurance/Playtester),QA (Quality Assurance/Playtester),品保,品保
+Marketing,Marketing,營銷,营销
+Promotional Artist (Marketing),Promotional Artist (Marketing),文宣藝術家（營銷）,文宣艺术家（营销）
+External QA,[b]External QA,[b]外部品保,[b]外部品保
+Font,Font,字形,字形
+Additional Assets,[b]Additional Assets,[b]額外材料,[b]额外材料
+Last checkpoint,Last checkpoint,上一關口,上一关口
+SaphTitle,[b]Chinese Simplified/Traditional Localization,[b]簡體/​繁體​中文翻​譯,[b]简体​/​繁体​中文翻​译
+CreditsBold,[b]Credits,[b]製作群,[b]制作群
+Next,Next,下一個,下一个
+PressSpaceToEscape,Press [color=red][wave]SPACE[/wave][/color] to escape!,按空格鍵逃開 ,按空格键逃开
+AmbienceCredit,ZHRØ Horror Ambient Factory [color=#0099FF][u]https://freesound.org/s/514942/[/u][/color] -- License: Attribution 4.0,ZHRØ 惊栗环境工厂 [color=#0099FF][u]https://freesound.org/s/514942/[/u][/color] 执照: 归功4.0,ZHRØ 驚慄環境工廠 [color=#0099FF][u]https://freesound.org/s/514942/[/u][/color] 執照:  歸功4.0
+TableSawCredit,gecop 'table saw 2' https://freesound.org/s/609918/ (License: Attribution 4.0),gecop 'table saw 2​' ( 执照: 归功4.0),gecop 'table saw 2​' ( 執照：歸功4.0)

@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://q0drtkfmgxgl"]
+
+[ext_resource type="Texture2D" uid="uid://dkr7a4sc13p3e" path="res://assets/art/materials/textures/altdev_generic03.png" id="1_y7xq3"]
+
+[resource]
+shading_mode = 2
+diffuse_mode = 1
+albedo_texture = ExtResource("1_y7xq3")
+uv1_triplanar = true

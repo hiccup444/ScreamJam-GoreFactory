@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dn7yvewcajcjv"]
+
+[ext_resource type="Texture2D" uid="uid://bmgddn6jaeaoe" path="res://assets/art/materials/Textures/ShredderTexture.png" id="1_hsfrd"]
+
+[resource]
+shading_mode = 2
+diffuse_mode = 1
+albedo_texture = ExtResource("1_hsfrd")

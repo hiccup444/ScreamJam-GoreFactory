@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bh5onktagatb"
+path="res://.godot/imported/wake up (cn).wav-1a1b5e3b2b916f01e9e99b5ac7cf7709.sample"
+
+[deps]
+
+source_file="res://assets/audio/dialogue/cn/wake up (cn).wav"
+dest_files=["res://.godot/imported/wake up (cn).wav-1a1b5e3b2b916f01e9e99b5ac7cf7709.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

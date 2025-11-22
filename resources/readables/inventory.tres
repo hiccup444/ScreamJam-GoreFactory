@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ReadableResource" load_steps=3 format=3 uid="uid://n0o5jekxamof"]
+
+[ext_resource type="Resource" uid="uid://bqed6ll8hx6ad" path="res://resources/dialogue/subtitleAudioLink/en/generic note response (en).tres" id="1_k5s4b"]
+[ext_resource type="Script" uid="uid://b128ugy2v2u7m" path="res://resources/readables/readable.gd" id="1_quitt"]
+
+[resource]
+script = ExtResource("1_quitt")
+readable_text = "InventoryDocument"
+dialogue = ExtResource("1_k5s4b")
+metadata/_custom_type_script = "uid://b128ugy2v2u7m"

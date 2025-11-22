@@ -1,0 +1,9 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://tlmwpiw66wfh"]
+
+[ext_resource type="AudioStream" uid="uid://dykb3sgrof7p3" path="res://assets/audio/sfx/Paper Sound 1.wav" id="1_a8vnt"]
+[ext_resource type="AudioStream" uid="uid://cg8i01b6tjv0d" path="res://assets/audio/sfx/Paper Sound 2.wav" id="2_5b8f5"]
+
+[resource]
+streams_count = 2
+stream_0/stream = ExtResource("1_a8vnt")
+stream_1/stream = ExtResource("2_5b8f5")

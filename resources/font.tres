@@ -1,0 +1,8 @@
+[gd_resource type="FontVariation" load_steps=3 format=3 uid="uid://dbyor22ihbp7v"]
+
+[ext_resource type="FontFile" uid="uid://ywvmdqs6jh0b" path="res://assets/fonts/Crimes Times Six.ttf" id="1_akxw8"]
+[ext_resource type="FontFile" uid="uid://b80nybtd3flos" path="res://assets/fonts/Deng.otf" id="2_akxw8"]
+
+[resource]
+fallbacks = Array[Font]([ExtResource("2_akxw8")])
+base_font = ExtResource("1_akxw8")

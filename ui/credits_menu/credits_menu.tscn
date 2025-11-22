@@ -1,0 +1,949 @@
+[gd_scene load_steps=9 format=3 uid="uid://defqjsh7i3rfi"]
+
+[ext_resource type="Theme" uid="uid://nugk8q3qw3sn" path="res://resources/themes/theme.tres" id="1_p2ygd"]
+[ext_resource type="Script" uid="uid://bgs8vnqjm4hev" path="res://ui/credits_menu/credits_menu.gd" id="2_1b3gi"]
+[ext_resource type="Texture2D" uid="uid://c2jyglef5oeyc" path="res://assets/art/ui/TF20Logo.png" id="3_1b3gi"]
+[ext_resource type="FontFile" uid="uid://b80nybtd3flos" path="res://assets/fonts/Deng.otf" id="3_trgga"]
+
+[sub_resource type="FontVariation" id="FontVariation_1b3gi"]
+fallbacks = Array[Font]([ExtResource("3_trgga")])
+variation_embolden = 0.5
+
+[sub_resource type="FontVariation" id="FontVariation_trgga"]
+fallbacks = Array[Font]([ExtResource("3_trgga")])
+variation_embolden = 0.5
+
+[sub_resource type="LabelSettings" id="LabelSettings_kvsec"]
+font_size = 64
+
+[sub_resource type="FontVariation" id="FontVariation_u672m"]
+variation_embolden = 0.5
+
+[node name="CreditsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_p2ygd")
+script = ExtResource("2_1b3gi")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.68235296)
+
+[node name="CreditsVBox1" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 1.0
+offset_top = -357.0
+offset_right = -879.0
+offset_bottom = 362.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = -20
+
+[node name="Spacer" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="Producer" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_1b3gi")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Producer"
+horizontal_alignment = 1
+
+[node name="Name" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Er3te"
+horizontal_alignment = 1
+
+[node name="Spacer2" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="Art Lead" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Art Lead"
+horizontal_alignment = 1
+
+[node name="Name2" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "XeKat"
+horizontal_alignment = 1
+
+[node name="Spacer3" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="Artists" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Artist"
+horizontal_alignment = 1
+
+[node name="ArtistsName1" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "XeKat"
+horizontal_alignment = 1
+
+[node name="ArtistsName2" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Er3te"
+horizontal_alignment = 1
+
+[node name="ArtistsName3" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Saph 蓝宝茶叶"
+horizontal_alignment = 1
+
+[node name="Spacer4" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="AssociateArtists" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Associate Artist"
+horizontal_alignment = 1
+
+[node name="AssociateArtistsName1" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Khira Musgrave"
+horizontal_alignment = 1
+
+[node name="AssociateArtistsName2" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Grimmigen"
+horizontal_alignment = 1
+
+[node name="Spacer5" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="GraphicDesigners" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Graphic Designer"
+horizontal_alignment = 1
+
+[node name="GDName" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "EnbyDisaster"
+horizontal_alignment = 1
+
+[node name="Spacer6" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="ArtConsultant" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Art Consultant"
+horizontal_alignment = 1
+
+[node name="ArtConsultantName" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Jessica Greving"
+horizontal_alignment = 1
+
+[node name="Spacer7" type="RichTextLabel" parent="CreditsVBox1"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="CreditsVBox2" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 353.0
+offset_top = -357.0
+offset_right = -361.0
+offset_bottom = 362.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = -20
+
+[node name="Credits" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/bold_font_size = 36
+bbcode_enabled = true
+text = "CreditsBold"
+horizontal_alignment = 1
+
+[node name="Spacer" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="DesignLead" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Design Lead"
+horizontal_alignment = 1
+
+[node name="Name" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Saph 蓝宝茶叶"
+horizontal_alignment = 1
+
+[node name="Spacer2" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="Designers" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Sr. Designers"
+horizontal_alignment = 1
+
+[node name="Name3" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Saph 蓝宝茶叶"
+horizontal_alignment = 1
+
+[node name="Name4" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "XeKat"
+horizontal_alignment = 1
+
+[node name="Name2" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Sean Headrick"
+horizontal_alignment = 1
+
+[node name="Spacer3" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="AssociateDesigners" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Designer"
+horizontal_alignment = 1
+
+[node name="ADName1" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Francis Cottrell-Eshaghi"
+horizontal_alignment = 1
+
+[node name="ADName2" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Khira Musgrave"
+horizontal_alignment = 1
+
+[node name="Spacer4" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="LevelDesigner" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Level Designer"
+horizontal_alignment = 1
+
+[node name="LevelDesignerName1" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "XeKat"
+horizontal_alignment = 1
+
+[node name="Spacer5" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="UIDesigner" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "UI Designer"
+horizontal_alignment = 1
+
+[node name="UIDesignerName1" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Fresh"
+horizontal_alignment = 1
+
+[node name="UIDesignerName2" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Gary Stambaugh"
+horizontal_alignment = 1
+
+[node name="UIDesignerName3" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Er3te"
+horizontal_alignment = 1
+
+[node name="Spacer6" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="QA" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "External QA"
+horizontal_alignment = 1
+
+[node name="QAName" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Smackajaweea"
+horizontal_alignment = 1
+
+[node name="Spacer7" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="Localization" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "SaphTitle"
+horizontal_alignment = 1
+
+[node name="LOName2" type="RichTextLabel" parent="CreditsVBox2"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Saph 蓝宝茶叶"
+horizontal_alignment = 1
+
+[node name="CreditsVBox3" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 860.0
+offset_top = -404.0
+offset_bottom = 409.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = -20
+
+[node name="Spacer" type="Label" parent="CreditsVBox3"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+label_settings = SubResource("LabelSettings_kvsec")
+
+[node name="Spacer2" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="LeadProgrammer" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Programming Lead"
+horizontal_alignment = 1
+
+[node name="Name" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Fresh"
+horizontal_alignment = 1
+
+[node name="Spacer3" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="Generalist" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Generalist"
+horizontal_alignment = 1
+
+[node name="Name2" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Fresh"
+horizontal_alignment = 1
+
+[node name="Name3" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Gary Stambaugh"
+horizontal_alignment = 1
+
+[node name="Spacer4" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="UIEngine" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "UI Engineer"
+horizontal_alignment = 1
+
+[node name="UIEngineName1" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Fresh"
+horizontal_alignment = 1
+
+[node name="UIEngineName2" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Gary Stambaugh"
+horizontal_alignment = 1
+
+[node name="Spacer5" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="Audio Lead" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Audio Lead"
+horizontal_alignment = 1
+
+[node name="AudioName1" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Joshua Castillo"
+horizontal_alignment = 1
+
+[node name="Spacer6" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="Composer" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Composer"
+horizontal_alignment = 1
+
+[node name="ComposerName" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Joshua Castillo"
+horizontal_alignment = 1
+
+[node name="Spacer7" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="SoundDesigners" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Sound Designer"
+horizontal_alignment = 1
+
+[node name="SoundDesignersName" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Joshua Castillo"
+horizontal_alignment = 1
+
+[node name="SoundDesignersName2" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Braxtyn Larcade"
+horizontal_alignment = 1
+
+[node name="Spacer9" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="VA" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_trgga")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Voice Actor"
+horizontal_alignment = 1
+
+[node name="VAName1" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Saph 蓝宝茶叶"
+horizontal_alignment = 1
+
+[node name="Spacer8" type="RichTextLabel" parent="CreditsVBox3"]
+custom_minimum_size = Vector2(0, 135)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="Return" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.031
+anchor_top = 0.001
+anchor_right = 0.119
+anchor_bottom = 0.946
+offset_left = -40.84
+offset_top = 668.28
+offset_right = 8.679993
+offset_bottom = 39.28003
+grow_vertical = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Return"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Return/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "<"
+
+[node name="CreditsReturnButton" type="Button" parent="Return/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+text = "Return"
+flat = true
+
+[node name="Next" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 1162.0
+offset_top = 674.0
+offset_right = 1270.0
+offset_bottom = 718.0
+
+[node name="NextButton" type="Button" parent="Next"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+text = "Next"
+flat = true
+
+[node name="Label" type="Label" parent="Next/NextButton"]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 6.0
+offset_right = 110.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = ">"
+
+[node name="NextCreditsVBox1" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 139.0
+offset_top = -364.5
+offset_right = -146.0
+offset_bottom = 358.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Spacer5" type="RichTextLabel" parent="NextCreditsVBox1"]
+visible = false
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NextCreditsVBox1"]
+layout_mode = 2
+theme_override_constants/separation = -11
+
+[node name="Credits" type="RichTextLabel" parent="NextCreditsVBox1/VBoxContainer"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_u672m")
+theme_override_font_sizes/bold_font_size = 36
+bbcode_enabled = true
+text = "CreditsBold"
+horizontal_alignment = 1
+
+[node name="AdditionalAssets" type="RichTextLabel" parent="NextCreditsVBox1/VBoxContainer"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/bold_font = SubResource("FontVariation_u672m")
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "Additional Assets"
+horizontal_alignment = 1
+
+[node name="Spacer4" type="RichTextLabel" parent="NextCreditsVBox1"]
+visible = false
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="Font1" type="RichTextLabel" parent="NextCreditsVBox1"]
+custom_minimum_size = Vector2(600, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "GGBotNet \"Help Me\" font
+[color=#0099FF][u]https://www.1001fonts.com/help-me-font.html"
+horizontal_alignment = 1
+
+[node name="Spacer2" type="RichTextLabel" parent="NextCreditsVBox1"]
+visible = false
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="Font2" type="RichTextLabel" parent="NextCreditsVBox1"]
+custom_minimum_size = Vector2(600, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "JSHcreates \"Crimes Times Six Font\"
+[color=#0099FF][u]font https://www.1001fonts.com/crimes-times-six-font.html"
+horizontal_alignment = 1
+
+[node name="Spacer3" type="RichTextLabel" parent="NextCreditsVBox1"]
+visible = false
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+text = " "
+
+[node name="Font3" type="RichTextLabel" parent="NextCreditsVBox1"]
+custom_minimum_size = Vector2(600, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "OnlineWebFonts \"DengXian\" Font
+[color=#0099FF][u]https://www.onlinewebfonts.com/download/1806ab26be3a603b160c4799558e9d18"
+horizontal_alignment = 1
+
+[node name="Font4" type="RichTextLabel" parent="NextCreditsVBox1"]
+custom_minimum_size = Vector2(600, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "AmbienceCredit"
+horizontal_alignment = 1
+
+[node name="Sawblade" type="RichTextLabel" parent="NextCreditsVBox1"]
+custom_minimum_size = Vector2(600, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 19
+theme_override_font_sizes/bold_font_size = 22
+bbcode_enabled = true
+text = "TableSawCredit"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="NextCreditsVBox1"]
+visible = false
+layout_mode = 2
+
+[node name="T20" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 386.0
+offset_top = 380.0
+offset_right = 1482.0
+offset_bottom = 1093.0
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("3_1b3gi")

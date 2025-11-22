@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c067u0y8kt52b"]
+
+[ext_resource type="Texture2D" uid="uid://c2sg1d4s3s53e" path="res://assets/art/Materials/Textures/MultiCreateTexture.png" id="1_5i50v"]
+
+[resource]
+shading_mode = 2
+diffuse_mode = 1
+albedo_texture = ExtResource("1_5i50v")

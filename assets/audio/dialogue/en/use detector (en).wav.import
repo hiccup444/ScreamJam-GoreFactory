@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dg4f7o227mnxj"
+path="res://.godot/imported/use detector (en).wav-c922f8083ab00875fa6e5a990fbf844f.sample"
+
+[deps]
+
+source_file="res://assets/audio/dialogue/en/use detector (en).wav"
+dest_files=["res://.godot/imported/use detector (en).wav-c922f8083ab00875fa6e5a990fbf844f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

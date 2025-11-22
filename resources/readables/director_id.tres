@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ReadableResource" load_steps=4 format=3 uid="uid://5ch85y0n7s7k"]
+
+[ext_resource type="Resource" uid="uid://ntiheyp8r67p" path="res://resources/dialogue/subtitleAudioLink/en/final note response (en).tres" id="1_nm2nw"]
+[ext_resource type="Script" uid="uid://b128ugy2v2u7m" path="res://resources/readables/readable.gd" id="1_yklq6"]
+[ext_resource type="Texture2D" uid="uid://bkgnw6ww12j5v" path="res://assets/art/ui/PaperTextures/ui_director_id_card_en.png" id="2_sym10"]
+
+[resource]
+script = ExtResource("1_yklq6")
+dialogue = ExtResource("1_nm2nw")
+paper_texture = ExtResource("2_sym10")
+metadata/_custom_type_script = "uid://b128ugy2v2u7m"

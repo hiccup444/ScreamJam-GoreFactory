@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://35ghendx3aaa"]
+
+[ext_resource type="Theme" uid="uid://nugk8q3qw3sn" path="res://resources/themes/theme.tres" id="1_2n5wy"]
+[ext_resource type="Script" uid="uid://dffcal8qo222f" path="res://ui/credits/credits.gd" id="2_nnsry"]
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_2n5wy")
+script = ExtResource("2_nnsry")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="RetryButton" type="Button" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -61.0
+offset_right = 203.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.61328125, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 50
+text = "MainMenu"
+flat = true

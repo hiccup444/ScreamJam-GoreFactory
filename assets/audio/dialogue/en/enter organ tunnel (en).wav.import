@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cis1ejkkf4p7u"
+path="res://.godot/imported/enter organ tunnel (en).wav-b23a90c8622c7238bb1839eb436f1cb2.sample"
+
+[deps]
+
+source_file="res://assets/audio/dialogue/en/enter organ tunnel (en).wav"
+dest_files=["res://.godot/imported/enter organ tunnel (en).wav-b23a90c8622c7238bb1839eb436f1cb2.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

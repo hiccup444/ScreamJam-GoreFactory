@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b0rksl3obsu1j"
+path="res://.godot/imported/rice throw on floor.wav-1c3b9bd354ea849d9c1ad91d44fed183.sample"
+
+[deps]
+
+source_file="res://assets/audio/sfx/rice/rice throw on floor.wav"
+dest_files=["res://.godot/imported/rice throw on floor.wav-1c3b9bd354ea849d9c1ad91d44fed183.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

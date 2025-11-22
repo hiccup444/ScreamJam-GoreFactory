@@ -1,0 +1,676 @@
+[gd_scene load_steps=37 format=3 uid="uid://dumalfa3kjsjn"]
+
+[ext_resource type="Script" uid="uid://dv834qmjhrhlf" path="res://scripts/lights.gd" id="3_28pt5"]
+[ext_resource type="PackedScene" uid="uid://begdvw6u6cn60" path="res://prefabs/levels/level_0.tscn" id="3_t8bip"]
+[ext_resource type="PackedScene" uid="uid://c42pjkliucvi8" path="res://resources/environment/world_environment.tscn" id="6_p8dxj"]
+[ext_resource type="PackedScene" uid="uid://cgvehk5x106pw" path="res://scenes/Floor1LayoutTest.tscn" id="6_r30uv"]
+[ext_resource type="PackedScene" uid="uid://c8vf3ntavmm5s" path="res://prefabs/elevator/elevator.tscn" id="7_050np"]
+[ext_resource type="Script" uid="uid://di18qumchke2a" path="res://scripts/cinematics/opening_cinematic.gd" id="7_u1yxi"]
+[ext_resource type="AudioStream" uid="uid://c57w7vadarnnv" path="res://assets/audio/dialogue/en/wake up (en).wav" id="9_rka82"]
+[ext_resource type="AudioStream" uid="uid://cfnvg2bnr3lcy" path="res://assets/audio/dialogue/en/fuckfuckfuck (en).wav" id="10_esoy7"]
+[ext_resource type="AudioStream" uid="uid://52y1oo1ehygh" path="res://assets/audio/dialogue/noises/impact grunt 2.wav" id="10_r30uv"]
+[ext_resource type="PackedScene" uid="uid://bq36hkpp8eopm" path="res://prefabs/player/player.tscn" id="10_yoi6q"]
+[ext_resource type="AudioStream" uid="uid://n8mmwg76ohsk" path="res://assets/audio/dialogue/en/jumpscare reaction quiet (en).wav" id="11_3k1j7"]
+[ext_resource type="AudioStream" uid="uid://q5ehfi77626q" path="res://assets/audio/sfx/director/Male-Getting-Unalived(1).ogg" id="11_4oell"]
+[ext_resource type="AudioStream" uid="uid://c4e0qelwuywv7" path="res://assets/audio/dialogue/noises/exertion grunt 1.wav" id="11_6pven"]
+[ext_resource type="PackedScene" uid="uid://b4yhd57mysjbs" path="res://prefabs/enemy/enemy.tscn" id="11_gfh5p"]
+[ext_resource type="AudioStream" uid="uid://bk72c8qx2te2q" path="res://assets/audio/dialogue/noises/exertion grunt 2.wav" id="11_rn7xg"]
+[ext_resource type="AudioStream" uid="uid://dr8i6rgxil883" path="res://assets/audio/sfx/chains.wav" id="11_yoi6q"]
+[ext_resource type="AudioStream" uid="uid://dixqr368fsnmt" path="res://assets/audio/dialogue/noises/exertion grunt 3.wav" id="12_rka82"]
+[ext_resource type="PackedScene" uid="uid://b38cr0gcm7oj2" path="res://prefabs/note/note.tscn" id="13_rn7xg"]
+[ext_resource type="Resource" uid="uid://b2cc0b4dqgvih" path="res://resources/readables/Note1.tres" id="14_rka82"]
+[ext_resource type="LightmapGIData" uid="uid://d1vlxcbhvpflu" path="res://resources/lightmaps/Floor0LayoutTest.lmbake" id="14_rn7xg"]
+[ext_resource type="AudioStream" uid="uid://cwy8ofdgd5sne" path="res://assets/audio/sfx/body fall on floor.wav" id="16_lokuf"]
+[ext_resource type="Script" uid="uid://rsupkgarqb7p" path="res://scripts/cinematics/director_audio.gd" id="21_4oell"]
+[ext_resource type="AudioStream" uid="uid://vkqy8pklbvh" path="res://assets/audio/sfx/box scrape on floor.wav" id="21_gfh5p"]
+[ext_resource type="Script" uid="uid://d5853ey5dwj2" path="res://prefabs/dialogue_trigger/dialogue_trigger.gd" id="22_3fq6c"]
+[ext_resource type="Resource" uid="uid://pxh0y8lwf87y" path="res://resources/dialogue/subtitleAudioLink/en/so many bodies (en).tres" id="23_qb0ap"]
+[ext_resource type="AudioStream" uid="uid://dq4kv1jj3b1lj" path="res://assets/audio/sfx/monster/table-saw-kill.ogg" id="26_3v856"]
+[ext_resource type="PackedScene" uid="uid://b8gjx62tj4v1l" path="res://prefabs/event_area_trigger/event_area_trigger.tscn" id="27_28pt5"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_lapnv"]
+vertices = PackedVector3Array(-2.2778568, 0.5004349, -4.892551, -1.2778568, 0.5004349, -4.642551, -1.5278568, 0.5004349, -5.142551, -5.027857, 0.5004349, -3.392551, -4.527857, 0.5004349, -2.392551, -4.527857, 0.5004349, -3.642551, -1.0278568, 0.5004349, 2.607449, -3.2778568, 0.25043488, 3.357449, -0.5278568, 0.25043488, 3.357449, 0.47214317, 0.5004349, 3.607449, 2.2221432, 0.5004349, 3.357449, 1.2221432, 0.5004349, 2.607449, 2.9721432, 0.5004349, 0.60744905, 2.9721432, 0.5004349, 1.607449, 3.4721432, 0.5004349, 1.857449, 3.4721432, 0.25043488, -1.142551, -1.0278568, 0.25043488, 1.857449, 2.2221432, 0.25043488, -0.89255095, 2.2221432, 0.5004349, 0.35744905, 2.7221432, 0.25043488, -1.142551, 1.4721432, 0.5004349, 1.107449, 0.7221432, 0.5004349, 0.85744905, -2.5278568, 0.5004349, -0.14255095, -1.7778568, 0.25043488, 1.607449, 0.9721432, 0.5004349, -0.64255095, -1.5278568, 0.5004349, -1.892551, -0.27785683, 0.25043488, 6.107449, 0.22214317, 0.25043488, 6.357449, -2.5278568, 0.5004349, -1.642551, 1.2221432, 0.25043488, -2.392551, 1.2221432, 0.25043488, -3.392551, -1.7778568, 0.5004349, -3.392551, -0.027856827, 0.5004349, 17.607449, -0.27785683, 0.25043488, 18.607449, 0.47214317, 0.25043488, 18.607449, -0.27785683, 0.5004349, 16.607449, -0.5278568, 0.25043488, 8.607449, 0.22214317, 0.5004349, 13.857449, -1.0278568, 0.5004349, 14.357449, -1.0278568, 0.5004349, 16.357449, 0.7221432, 0.5004349, 14.357449, -3.2778568, 0.5004349, 8.607449, -3.2778568, 0.5004349, 14.107449, 4.722143, 0.5004349, 14.357449, 4.722143, 0.5004349, 13.607449, -6.027857, 0.5004349, 10.607449, -5.527857, 0.5004349, 13.607449, -4.527857, 0.5004349, 13.357449, -4.527857, 0.5004349, 10.357449, 9.972143, 0.5004349, 15.107449, 10.972143, 0.5004349, 14.857449, 11.222143, 0.5004349, 14.607449, 10.472143, 0.5004349, 12.357449, 6.722143, 0.25043488, 13.357449, 6.722143, 0.5004349, 14.607449, 10.722143, 0.5004349, 17.357449, 10.722143, 0.5004349, 16.357449, 9.972143, 0.5004349, 16.107449, 6.722143, 0.25043488, 17.357449, 11.222143, 0.5004349, 12.107449, 11.222143, 0.5004349, 10.607449, 6.722143, 0.25043488, 10.607449, 12.222143, 0.5004349, 14.607449, 11.472143, 0.5004349, 16.107449, 13.472143, 0.5004349, 17.357449, 11.972143, 0.5004349, 12.357449, 11.972143, 0.5004349, 13.357449, 12.472143, 0.5004349, 13.607449, 13.472143, 0.5004349, 10.607449, 14.722143, 0.5004349, 12.357449, 14.722143, 0.5004349, 16.607449, 16.722143, 0.5004349, 13.607449, 16.222143, 0.5004349, 12.857449, -16.277857, 1.0004349, 18.357449, -16.277857, 0.7504349, 17.607449, -17.277857, 0.5004349, 17.857449, -21.027857, 0.5004349, 14.857449, -23.527857, 0.5004349, 17.857449, -23.527857, 0.5004349, 18.357449, -17.727856, 0.5004349, 18.357449, -2.2778568, 0.5004349, 17.607449, -2.2778568, 0.5004349, 18.107449, -1.5278568, 0.5004349, 17.857449, 12.722143, 0.5004349, 20.107449, 13.472143, 0.5004349, 19.107449, 13.472143, 0.5004349, 18.607449, 10.722143, 0.5004349, 18.607449, -24.277857, 0.5004349, 20.857449, -25.027857, 0.5004349, 21.107449, -24.527857, 0.5004349, 21.607449, -18.527857, 1.0004349, 26.357449, -18.527857, 1.0004349, 25.357449, -18.777857, 0.5004349, 24.357449, -20.777857, 0.5004349, 25.107449, -20.777857, 0.5004349, 26.357449, -24.527857, 0.5004349, 25.107449, -24.027857, 0.25043488, 23.857449, -21.527857, 0.5004349, 23.607449, -18.277857, 0.5004349, 24.357449, -18.027857, 0.5004349, 19.607449, -24.527857, 0.5004349, 19.607449, -18.027857, 0.7504349, 25.357449, -14.777857, 0.5004349, 26.357449, -16.944523, 1.0004349, 25.690783, -17.277857, 1.2504349, 26.357449, -15.777857, 1.2504349, 19.607449, -16.277857, 1.2504349, 19.607449, -16.277857, 1.0004349, 20.607449, -15.527857, 1.0004349, 20.857449, -14.777857, 0.7504349, 21.857449, -15.777857, 0.7504349, 21.607449, -17.027857, 0.7504349, 20.607449, -17.277857, 0.7504349, 19.607449, -6.277857, 0.25043488, 23.357449, -2.5278568, 0.25043488, 23.107449, -6.277857, 0.25043488, 22.607449, -6.527857, 0.25043488, 19.607449, -7.027857, 0.25043488, 19.607449, -6.777857, 0.25043488, 20.607449, -14.277857, 1.0004349, 20.857449, -7.277857, 0.25043488, 21.107449, -8.027857, 0.5004349, 21.107449, -7.777857, 0.5004349, 19.607449, -11.777857, 0.5004349, 19.607449, -11.777857, 0.5004349, 20.957449, -14.277857, 1.0004349, 21.607449, -6.527857, 1.0004349, 26.357449, -10.652857, 0.25043488, 26.357449, -8.007772, 0.7504349, 24.359358, -8.047821, 0.25043488, 22.86541, -0.27785683, 0.25043488, 22.357449, -2.0278568, 0.25043488, 22.857449, 0.47214317, 0.25043488, 23.107449, 0.47214317, 0.5004349, 19.607449, -0.27785683, 0.5004349, 19.607449, -23.277857, 2.7504349, 24.857449, -23.027857, 2.7504349, 25.857449, -22.027857, 2.7504349, 25.607449, -22.277857, 2.7504349, 24.607449, -5.277857, 0.5004349, 24.607449, -5.277857, 0.7504349, 25.607449, -4.527857, 0.5004349, 25.357449, -24.527857, 0.25043488, 25.857449, -24.527857, 0.25043488, 26.357449, -24.027857, 0.5004349, 26.357449, -24.027857, 0.5004349, 25.857449, -21.027857, 0.5004349, 27.607449, -20.527857, 0.5004349, 28.357449, -19.777857, 0.5004349, 27.857449, -16.527857, 1.5004349, 27.857449, -18.694523, 1.2504349, 27.857449, -13.527857, 0.5004349, 28.607449, -12.777857, 0.5004349, 28.107449, -12.777857, 0.5004349, 27.607449, -14.527857, 0.5004349, 27.607449)
+polygons = [PackedInt32Array(0, 2, 1), PackedInt32Array(4, 3, 5), PackedInt32Array(7, 6, 8), PackedInt32Array(11, 10, 9), PackedInt32Array(13, 12, 14), PackedInt32Array(14, 12, 15), PackedInt32Array(8, 6, 16), PackedInt32Array(19, 15, 17), PackedInt32Array(17, 15, 18), PackedInt32Array(18, 15, 12), PackedInt32Array(20, 11, 21), PackedInt32Array(21, 11, 9), PackedInt32Array(21, 9, 8), PackedInt32Array(21, 8, 16), PackedInt32Array(23, 22, 16), PackedInt32Array(16, 22, 21), PackedInt32Array(21, 22, 24), PackedInt32Array(24, 22, 25), PackedInt32Array(27, 26, 9), PackedInt32Array(9, 26, 8), PackedInt32Array(22, 28, 25), PackedInt32Array(17, 24, 19), PackedInt32Array(19, 24, 29), PackedInt32Array(29, 24, 30), PackedInt32Array(30, 24, 25), PackedInt32Array(30, 25, 31), PackedInt32Array(34, 33, 32), PackedInt32Array(35, 34, 32), PackedInt32Array(26, 27, 36), PackedInt32Array(36, 27, 37), PackedInt32Array(38, 35, 39), PackedInt32Array(38, 40, 35), PackedInt32Array(35, 40, 34), PackedInt32Array(36, 37, 41), PackedInt32Array(41, 37, 42), PackedInt32Array(40, 38, 37), PackedInt32Array(37, 38, 42), PackedInt32Array(43, 40, 44), PackedInt32Array(44, 40, 37), PackedInt32Array(46, 45, 47), PackedInt32Array(47, 45, 48), PackedInt32Array(50, 49, 51), PackedInt32Array(51, 49, 52), PackedInt32Array(52, 49, 53), PackedInt32Array(53, 49, 54), PackedInt32Array(56, 55, 57), PackedInt32Array(57, 55, 58), PackedInt32Array(59, 52, 60), PackedInt32Array(60, 52, 61), PackedInt32Array(61, 52, 53), PackedInt32Array(44, 53, 43), PackedInt32Array(43, 53, 54), PackedInt32Array(49, 57, 54), PackedInt32Array(54, 57, 58), PackedInt32Array(51, 62, 50), PackedInt32Array(50, 62, 63), PackedInt32Array(63, 62, 64), PackedInt32Array(66, 65, 67), PackedInt32Array(67, 65, 68), PackedInt32Array(56, 63, 55), PackedInt32Array(55, 63, 64), PackedInt32Array(62, 67, 64), PackedInt32Array(64, 67, 68), PackedInt32Array(59, 60, 65), PackedInt32Array(65, 60, 68), PackedInt32Array(72, 71, 69), PackedInt32Array(69, 71, 70), PackedInt32Array(75, 74, 73), PackedInt32Array(77, 76, 78), PackedInt32Array(78, 76, 75), PackedInt32Array(73, 79, 75), PackedInt32Array(75, 79, 78), PackedInt32Array(82, 81, 80), PackedInt32Array(84, 83, 85), PackedInt32Array(85, 83, 86), PackedInt32Array(89, 88, 87), PackedInt32Array(91, 90, 92), PackedInt32Array(92, 90, 93), PackedInt32Array(93, 90, 94), PackedInt32Array(89, 96, 95), PackedInt32Array(89, 87, 96), PackedInt32Array(96, 87, 97), PackedInt32Array(92, 97, 98), PackedInt32Array(98, 97, 99), PackedInt32Array(99, 97, 87), PackedInt32Array(99, 87, 100), PackedInt32Array(97, 92, 93), PackedInt32Array(91, 101, 90), PackedInt32Array(90, 101, 104), PackedInt32Array(104, 101, 103), PackedInt32Array(104, 103, 102), PackedInt32Array(106, 105, 107), PackedInt32Array(107, 105, 108), PackedInt32Array(101, 98, 103), PackedInt32Array(103, 98, 102), PackedInt32Array(102, 98, 110), PackedInt32Array(102, 110, 109), PackedInt32Array(108, 110, 107), PackedInt32Array(107, 110, 111), PackedInt32Array(111, 110, 98), PackedInt32Array(112, 111, 99), PackedInt32Array(99, 111, 98), PackedInt32Array(115, 114, 113), PackedInt32Array(118, 117, 116), PackedInt32Array(119, 108, 105), PackedInt32Array(118, 116, 115), PackedInt32Array(120, 118, 115), PackedInt32Array(120, 115, 121), PackedInt32Array(121, 115, 113), PackedInt32Array(119, 105, 124), PackedInt32Array(124, 105, 123), PackedInt32Array(124, 123, 121), PackedInt32Array(121, 123, 122), PackedInt32Array(113, 129, 121), PackedInt32Array(121, 129, 125), PackedInt32Array(125, 102, 109), PackedInt32Array(102, 125, 127), PackedInt32Array(127, 128, 126), PackedInt32Array(126, 128, 113), PackedInt32Array(113, 128, 129), PackedInt32Array(129, 127, 125), PackedInt32Array(127, 129, 128), PackedInt32Array(119, 124, 125), PackedInt32Array(125, 124, 121), PackedInt32Array(131, 130, 132), PackedInt32Array(134, 133, 130), PackedInt32Array(130, 133, 132), PackedInt32Array(138, 137, 135), PackedInt32Array(135, 137, 136), PackedInt32Array(141, 140, 139), PackedInt32Array(145, 144, 142), PackedInt32Array(142, 144, 143), PackedInt32Array(148, 147, 146), PackedInt32Array(148, 146, 150), PackedInt32Array(150, 146, 149), PackedInt32Array(152, 151, 153), PackedInt32Array(153, 151, 154)]
+
+[sub_resource type="Animation" id="Animation_u1yxi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Player:immobile")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Player/Head:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 3.1415927)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Player:head_locked")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Player:gravity_enabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [true]
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("WorldEnvironment:environment:tonemap_exposure")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Player:invert_camera_x_axis")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Player:invert_camera_y_axis")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AudioPlayers/BodyScrapingPlayer:playing")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_p8dxj"]
+resource_name = "intro"
+length = 15.0
+step = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Player:immobile")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [true]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Enemy")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(4.05),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [Vector3(9.238043, -9.536743e-07, 14.108455)],
+"method": &"set_nav_point"
+}]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Player:head_locked")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 4.046433),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = false
+tracks/3/path = NodePath("Player:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 3.1415927, 3.1415927)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = false
+tracks/4/path = NodePath("Player:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 4, -3)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Player:gravity_enabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("WorldEnvironment:environment:tonemap_exposure")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(2, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0.25, -0.066901565, -0.041666668, 0, 0, 0, -0.022074118, 0.041666668, 0, 0, 0, -0.022074118, 0.041666668, 0, 0, 0.3, -0.04788386, -0.083333336, 0, 0, 0, -0.022074118, 0.041666668, 0, 0, 0, -0.022074118, 0.041666668, 0, 0, 1, -0.022074118, 0.041666668, 0, 0),
+"times": PackedFloat32Array(0, 0.352331, 0.93322587, 1.3041137, 1.8948323, 2.271623, 2.4959807, 2.7589002)
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Player:invert_camera_x_axis")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 15),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Player:invert_camera_y_axis")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 15),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/9/type = "audio"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("OpeningCinematic/Dialogue")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 1.2912433,
+"stream": ExtResource("9_rka82")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("10_esoy7")
+}],
+"times": PackedFloat32Array(0, 12.2786665)
+}
+tracks/9/use_blend = true
+tracks/10/type = "audio"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("OpeningCinematic/SFX")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("11_yoi6q")
+}, {
+"end_offset": 7.21433,
+"start_offset": 0.0,
+"stream": ExtResource("11_yoi6q")
+}],
+"times": PackedFloat32Array(0, 11)
+}
+tracks/10/use_blend = true
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AudioPlayers/BodyScrapingPlayer:playing")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 10.026872),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/12/type = "animation"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Player/Player/AnimationPlayer")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"clips": PackedStringArray("Anim-Player-HangIdle"),
+"times": PackedFloat32Array(0)
+}
+tracks/13/type = "method"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("AudioPlayers/Director")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(2, 11.5, 13.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"values": [{
+"args": [],
+"method": &"play_director_shocked_2"
+}, {
+"args": [],
+"method": &"play_director_shocked_1"
+}, {
+"args": [],
+"method": &"play_director_screaming"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_pi5ki"]
+resource_name = "player_fall"
+length = 6.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Player/Head:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5333333, 2.7666667, 3.7, 5.8333335),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 3.1415927, 3.1415927), Vector3(0, 3.1415927, 3.1415927), Vector3(0, 3.1415927, 4.7664943), Vector3(0, 3.1415927, 4.7664943), Vector3(0, 3.1415927, 6.2831855)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Player:head_locked")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Player:gravity_enabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 6.133333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [false, true]
+}
+tracks/3/type = "audio"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("OpeningCinematic/Dialogue")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.2181512,
+"stream": ExtResource("11_3k1j7")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.17580347,
+"stream": ExtResource("11_rn7xg")
+}, {
+"end_offset": 0.015310004,
+"start_offset": 0.27371374,
+"stream": ExtResource("11_6pven")
+}, {
+"end_offset": 0.032266498,
+"start_offset": 0.0,
+"stream": ExtResource("10_r30uv")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.210705,
+"stream": ExtResource("11_rn7xg")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("12_rka82")
+}],
+"times": PackedFloat32Array(0, 0.91577536, 1.8333334, 2.2460573, 3.7666667, 4.222628)
+}
+tracks/3/use_blend = true
+tracks/4/type = "audio"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("OpeningCinematic/SFX")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"clips": [{
+"end_offset": 7.824102,
+"start_offset": 0.0,
+"stream": ExtResource("11_yoi6q")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.53000003,
+"stream": ExtResource("16_lokuf")
+}],
+"times": PackedFloat32Array(0.0333333, 2.7966666)
+}
+tracks/4/use_blend = true
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Player:immobile")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [true]
+}
+tracks/6/type = "animation"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Player/Player/AnimationPlayer")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"clips": PackedStringArray("Anim-Player-HangFall"),
+"times": PackedFloat32Array(0.29070994)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pi5ki"]
+_data = {
+&"RESET": SubResource("Animation_u1yxi"),
+&"intro": SubResource("Animation_p8dxj"),
+&"player_fall": SubResource("Animation_pi5ki")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r30uv"]
+size = Vector3(1.6259766, 1.5297852, 2.286316)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0qd01"]
+size = Vector3(1.6634521, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ar2n8"]
+size = Vector3(3.6009521, 1.2550049, 3.2521973)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t8bip"]
+size = Vector3(5.703972, 1.2550049, 3.1168442)
+
+[node name="Scene2" type="Node3D"]
+
+[node name="WorldEnvironment" parent="." instance=ExtResource("6_p8dxj")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+light_energy = 0.0
+directional_shadow_max_distance = 250.0
+
+[node name="LightmapGI" type="LightmapGI" parent="."]
+light_data = ExtResource("14_rn7xg")
+
+[node name="Light" type="Node3D" parent="."]
+script = ExtResource("3_28pt5")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Light"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2271216, 0.33286902, -2.0061924)
+light_color = Color(1.5659846, 1.5659846, 1.5720325, 1)
+light_bake_mode = 1
+omni_range = 9.397
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Light"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1574495, 10.862406)
+light_color = Color(1.5659846, 1.5659846, 1.5720325, 1)
+light_bake_mode = 1
+omni_range = 9.397
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Light"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1574495, 19.383703)
+light_color = Color(1.5659846, 1.5659846, 1.5720325, 1)
+light_bake_mode = 1
+omni_range = 9.397
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="Light"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.783031, 3.1574495, 22.959442)
+light_color = Color(1.5659846, 1.5659846, 1.5720325, 1)
+light_bake_mode = 1
+omni_range = 9.397
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="Light"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.351072, 3.1574495, 22.959442)
+light_color = Color(1.5659846, 1.5659846, 1.5720325, 1)
+light_bake_mode = 1
+omni_range = 9.397
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="Light"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.991337, 3.1574495, 22.959442)
+light_color = Color(1.5659846, 1.5659846, 1.5720325, 1)
+light_bake_mode = 1
+omni_range = 9.397
+
+[node name="Level0" type="Node3D" parent="."]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="Level0"]
+navigation_mesh = SubResource("NavigationMesh_lapnv")
+
+[node name="Floor0" parent="Level0/NavigationRegion3D" instance=ExtResource("3_t8bip")]
+
+[node name="Elevator" parent="Level0" node_paths=PackedStringArray("door_presence_detection_area", "root_scene") instance=ExtResource("7_050np")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -26.562437, 0.08638818, 23.002625)
+door_presence_detection_area = NodePath("../../ElevatorDetectionArea")
+next_level = ExtResource("6_r30uv")
+root_scene = NodePath("../..")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Level0/Elevator"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1177003, -0.9046345)
+distance_fade_enabled = true
+omni_range = 3.031
+omni_attenuation = -0.589
+
+[node name="Player" parent="." instance=ExtResource("10_yoi6q")]
+transform = Transform3D(-1, 0, 1.509958e-07, 0, 1, 0, -1.509958e-07, 0, -1, 0, 0, -3)
+invert_camera_x_axis = true
+invert_camera_y_axis = true
+
+[node name="Head" parent="Player" index="3"]
+transform = Transform3D(-1, 8.742278e-08, 0, -8.742278e-08, -1, 0, 0, 0, 1, 0, 1.5, 0)
+
+[node name="GameUI" parent="Player" index="7"]
+process_mode = 3
+
+[node name="Skeleton3D" parent="Player/Player/PlayerArmature" index="0"]
+bones/1/rotation = Quaternion(0.99752617, 0.02948673, 0.039491657, -0.050126433)
+bones/5/rotation = Quaternion(0.07662852, 4.1453507e-12, 1.8215813e-08, 0.9970597)
+bones/7/rotation = Quaternion(0.10662015, -8.192869e-12, 2.5496298e-08, 0.9942998)
+bones/8/rotation = Quaternion(0.00028927895, -1.4026691e-15, -1.7770082e-15, 1)
+bones/9/position = Vector3(0.09518984, 0.2329691, -0.013944905)
+bones/9/rotation = Quaternion(0.06814636, 0.08238381, -0.7660192, 0.6338641)
+bones/10/rotation = Quaternion(-0.18187802, 0.04736304, -0.4999828, 0.845396)
+bones/11/rotation = Quaternion(0.26792848, 7.2050716e-05, -0.028926509, 0.96300447)
+bones/12/rotation = Quaternion(0.0079675, 0.722512, -0.07863987, 0.6868251)
+bones/14/position = Vector3(-0.09518985, 0.2329691, -0.013944966)
+bones/14/rotation = Quaternion(0.0681462, -0.08238394, 0.76601917, 0.6338641)
+bones/15/rotation = Quaternion(-0.181878, -0.047363076, 0.49998286, 0.8453959)
+bones/16/rotation = Quaternion(0.26792875, -7.204863e-05, 0.02892655, 0.96300447)
+bones/17/rotation = Quaternion(0.007967497, -0.7225121, 0.078639895, 0.6868251)
+bones/19/rotation = Quaternion(0.99752617, -0.029486718, -0.039491445, -0.05012643)
+bones/23/position = Vector3(-0.28280407, 0.9930349, -0.023893436)
+bones/23/rotation = Quaternion(0.49949878, -0.49980026, 0.5001992, 0.5005013)
+
+[node name="HeadRefBone" parent="Player/Player/PlayerArmature/Skeleton3D" index="1"]
+transform = Transform3D(1, 9.167076e-11, 2.3843492e-07, 1.262211e-12, 0.9999999, -0.0003897601, -2.38435e-07, 0.00038980474, 0.99999976, 4.1334755e-11, 1.5505071, 0.0016989688)
+
+[node name="Enemy" parent="." instance=ExtResource("11_gfh5p")]
+transform = Transform3D(-0.9961947, 0, -0.08715576, 0, 1, 0, 0.08715576, 0, -0.9961947, 1.9504483, 0, 1.5540051)
+
+[node name="EnemyNavPoints" type="Node3D" parent="."]
+
+[node name="SideRoom" type="Node3D" parent="EnemyNavPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.238043, -9.536743e-07, 14.108455)
+
+[node name="Hallway" type="Node3D" parent="EnemyNavPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06396389, -9.536743e-07, 14.108455)
+
+[node name="OpeningCinematic" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_pi5ki")
+}
+script = ExtResource("7_u1yxi")
+
+[node name="Dialogue" type="AudioStreamPlayer" parent="OpeningCinematic"]
+bus = &"Dialogue"
+
+[node name="SFX" type="AudioStreamPlayer" parent="OpeningCinematic"]
+bus = &"SFX"
+
+[node name="ElevatorDetectionArea" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.815195, 1.2142704, 23.055405)
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ElevatorDetectionArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.31298828, -0.26489258, -0.03878784)
+shape = SubResource("BoxShape3D_r30uv")
+
+[node name="AudioPlayers" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.1060505, 0, 14.15073)
+
+[node name="BodyScrapingPlayer" type="AudioStreamPlayer3D" parent="AudioPlayers"]
+process_mode = 3
+transform = Transform3D(-0.08715577, 0, 0.9961947, 0, 1, 0, -0.9961947, 0, -0.08715577, 0.39432907, 0, -0.3597536)
+stream = ExtResource("21_gfh5p")
+bus = &"SFX"
+emission_angle_enabled = true
+emission_angle_degrees = 37.0
+
+[node name="Director" type="AudioStreamPlayer3D" parent="AudioPlayers" node_paths=PackedStringArray("cinematic")]
+max_distance = 32.7
+bus = &"SFX"
+script = ExtResource("21_4oell")
+cinematic = NodePath("../../OpeningCinematic")
+
+[node name="Chainsaw" type="AudioStreamPlayer3D" parent="AudioPlayers"]
+bus = &"SFX"
+
+[node name="Note" parent="." instance=ExtResource("13_rn7xg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.340629, 0.099999525, 24.62186)
+readable_entry = ExtResource("14_rka82")
+
+[node name="DialogueTrigger_Bodies" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.479906, 9.536743e-07, 23.68423)
+collision_mask = 2
+script = ExtResource("22_3fq6c")
+dialogue_data = ExtResource("23_qb0ap")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DialogueTrigger_Bodies"]
+transform = Transform3D(9, 0, 0, 0, 9, 0, 0, 0, 9, -0.7496376, 0, -0.4192009)
+shape = SubResource("BoxShape3D_0qd01")
+
+[node name="ScreamEventTrigger" parent="." node_paths=PackedStringArray("player") instance=ExtResource("27_28pt5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.024579287, 0, 15.914117)
+player = NodePath("../AudioPlayers/Director")
+stream = ExtResource("11_4oell")
+
+[node name="CollisionShape3D" parent="ScreamEventTrigger" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04422784, 0.94567955, 4.5157766)
+
+[node name="ChainsawEventTrigger" parent="." node_paths=PackedStringArray("player") instance=ExtResource("27_28pt5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.024579287, 0, 15.914117)
+player = NodePath("../AudioPlayers/Chainsaw")
+stream = ExtResource("26_3v856")
+
+[node name="CollisionShape3D" parent="ChainsawEventTrigger" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04422784, 0.94567955, 4.5157766)
+
+[node name="SquelchArea" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.448791, 0, 25.490639)
+collision_layer = 128
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SquelchArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.429749, 0.12750244, -0.14538574)
+shape = SubResource("BoxShape3D_ar2n8")
+
+[node name="SquelchArea2" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.79179, 0, 25.490639)
+collision_layer = 128
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SquelchArea2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0253448, 0.12750244, 0.17868042)
+shape = SubResource("BoxShape3D_t8bip")
+
+[node name="SquelchArea3" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.895567, 0, 20.183243)
+collision_layer = 128
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SquelchArea3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6916618, 0.12750244, 0.4312477)
+shape = SubResource("BoxShape3D_t8bip")
+
+[editable path="Player"]
+[editable path="ScreamEventTrigger"]
+[editable path="ChainsawEventTrigger"]

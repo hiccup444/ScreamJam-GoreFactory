@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dc6ywddk7dcvl"
+path="res://.godot/imported/generic note response (cn).wav-83918a6793f6f8fbd4948088f0cac561.sample"
+
+[deps]
+
+source_file="res://assets/audio/dialogue/cn/generic note response (cn).wav"
+dest_files=["res://.godot/imported/generic note response (cn).wav-83918a6793f6f8fbd4948088f0cac561.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

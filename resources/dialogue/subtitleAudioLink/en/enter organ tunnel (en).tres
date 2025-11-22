@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=4 format=3 uid="uid://ct24m0hd6ja1d"]
+
+[ext_resource type="AudioStream" uid="uid://cis1ejkkf4p7u" path="res://assets/audio/dialogue/en/enter organ tunnel (en).wav" id="1_rmewx"]
+[ext_resource type="Script" uid="uid://b2np6ns7qtn2s" path="res://scripts/data/dialogue_data.gd" id="2_45u0g"]
+[ext_resource type="Resource" uid="uid://mqkdx3elty5g" path="res://resources/dialogue/subtitles/enter organ tunnel.tres" id="3_45u0g"]
+
+[resource]
+script = ExtResource("2_45u0g")
+audio_clip = ExtResource("1_rmewx")
+subtitle_data = ExtResource("3_45u0g")
+speaker_name = "Player"

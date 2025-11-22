@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dd1of3gs57l24"]
+
+[ext_resource type="Texture2D" uid="uid://djtj1wmu27njf" path="res://assets/art/materials/Textures/BodyTexture.png" id="1_v21t6"]
+
+[resource]
+shading_mode = 2
+diffuse_mode = 1
+albedo_texture = ExtResource("1_v21t6")

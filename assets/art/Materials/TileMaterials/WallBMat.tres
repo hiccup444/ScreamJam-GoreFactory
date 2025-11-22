@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c84us0hs22dh7"]
+
+[ext_resource type="Texture2D" uid="uid://dw3akwetbr1t8" path="res://assets/art/materials/Textures/TileTextures/Floor1-WallTexture.png" id="1_3opfr"]
+
+[resource]
+shading_mode = 2
+diffuse_mode = 1
+albedo_texture = ExtResource("1_3opfr")
+uv1_scale = Vector3(0.2, 0.2, 0.2)
+uv1_triplanar = true

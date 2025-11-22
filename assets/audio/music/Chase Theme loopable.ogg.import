@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://7vtw75c13pfk"
+path="res://.godot/imported/Chase Theme loopable.ogg-dbf249e706d98b44136bcb1307f2ba60.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/music/Chase Theme loopable.ogg"
+dest_files=["res://.godot/imported/Chase Theme loopable.ogg-dbf249e706d98b44136bcb1307f2ba60.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
